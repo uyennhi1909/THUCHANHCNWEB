@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .P1_C1{
+            text-align: center;
+            font-style: italic;
+            background-color: #D3D3D3;
+            font-family: Arial, sans-serif; /*font chữ dự phòng*/
+        }
+        #AVT {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #696969;
+        }
+        li {
+            background-color: #696969 ;
+            padding-left: 20px 20px;
+        }
+        li:nth-child(odd) {
+            background-color: #D3D3D3 ;
+        }
+        li:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.05) ;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /*gộp viền bảng lại với nhau*/
+        }
+        td {
+            border: 5px solid gray;
+            text-align: center;
+        }
+        tr:nth-child(even) { /*Hàng chẵn*/
+            background-color: #d3d3d3
+        }
+        tr:nth-child(odd) { /*Hàng lẻ*/
+            background-color: #696969
+        }
+        tr:hover {
+            background-color: white;
+        }
+        form {
+            margin: 0 auto; 
+            border-radius: 10px;
+        }
+        input {
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: grey;
+            transform: translateY(-2px);
+        }
+        .P1_C5 {
+            text-align: center;
+        }
+        a {
+            text-align: center;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #d3d3d3;
+            color: black;
+        }
+        a:active{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1> Giới thiệu bản thân </h1> 
+    <div class = "P1_C1"> 
+        <img src="https://picsum.photos/200/300" alt="Ảnh đại diện" id = "AVT">
+        <p> Họ tên: <strong> Ngô Uyên Nhi </strong> </p>
+        <p> Ngày sinh: 19/09/2005 </p>
+        <p> Sở thích: Xem phim, đọc truyện </p>
+        <p> Mô tả ngắn: Thân thiện, hòa đồng, ham học hỏi </p>
+    </div>
+    <h2> Danh sách môn học yêu thích </h2>
+    <div class = "P1_C2"> 
+        <ul>
+            <li> Hệ thống và công nghệ Web </li>
+            <li> Kinh tế học </li>
+            <li> Nhập môn lập trình </li>
+            <li> Đồ họa ứng dụng </li>
+        </ul>
+    </div>
+    <h2> Thời khóa biểu </h2>
+    <div class = "P1_C3"> 
+        <table border = "1">
+            <tr> 
+                <td> Thứ </td>
+                <td> Môn học </td>
+                <td> Giờ học </td>
+                <td> Phòng học </td>
+            </tr>
+            <tr> 
+                <td> Thứ 2 </td>
+                <td> CN Web </td>
+                <td> 6:30 - 9:00 </td>
+                <td> N8.02 </td>
+            </tr>
+            <tr> 
+                <td> Thứ 3 </td>
+                <td> CN Web </td>
+                <td> 6:30 - 9:00 </td>
+                <td> N8.02 </td>
+            </tr>
+        </table>
+    </div>
+    <h2> Form đăng ký thông tin cá nhân </h2>
+    <div class = "P1_C4"> 
+        <form>
+            Họ tên: <input type = "text"/>
+            <br>
+            Email: <input type = "email"/>
+            <br>
+            Số điện thoại: <input type = "tel"/>
+            <br>
+            Giới tính: 
+            <input type = "radio" name = "gioitinh" value = "Nam"/> Nam
+            <input type = "radio" name = "gioitinh" value = "Nữ"/> Nữ
+            <input type = "radio" name = "gioitinh" value = "Khác"/> Khác
+            <br>
+            <button> Gửi </button>
+        </form>
+    </div>
+    <h3> Liên kết điều hướng </h3>
+    <div class = "P1_C5"> 
+        <a href="https://www.w3schools.com/css/" target = "_blank"> Trang tự học css </a>
+        <br>
+        <a href="https://www.w3schools.com/html/" target = "_blank"> Trang tự học css </a>
+    </div>
+</body>
+</html>
