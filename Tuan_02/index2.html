@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .P2_C6 {
+            text-align: center;
+        }
+        .P2_C6 > img {
+            border-radius: 15px;
+            box-shadow: 10px 5px grey;
+        }
+        .P2_C7 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .P2_C7 > img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .P2_C8 {
+            text-align: center;
+            background-color: #ddd;
+            margin: 50px;
+        }
+        .P2_C8 > iframe {
+            border-radius: 10px;
+            border: none;
+        }
+        .P2_C9 {
+            text-align: center;
+            border: 2px solid #ddd;
+        }
+        .P2_C10 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .P2_C10 > img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .P2_C10:hover {
+            background-color: #d3d3d3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1> Phần 2 </h1>
+    <div class = "P2_C6">
+        <img src="./IMG/P2_C6.jpg" alt="Ảnh đại diện">
+        <figcaption> Đây là ảnh đại diện </figcaption>
+    </div>
+    <h2> Thư viện ảnh </h2>
+    <div class = "P2_C7">
+        <img src="./IMG/P2_C7(1).jpg" alt="Ảnh 1">
+        <img src="./IMG/P2_C7(2).jpg" alt="Ảnh 2">
+        <img src="./IMG/P2_C7(3).jpg" alt="Ảnh 3">
+        <img src="./IMG/P2_C7(4).jpg" alt="Ảnh 4">
+        <img src="./IMG/P2_C7(5).jpg" alt="Ảnh 5">
+        <img src="./IMG/P2_C7(6).jpg" alt="Ảnh 6">
+    </div>
+    <h2> Video Youtube </h2>
+    <div class = "P2_C8">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GmONlpebnoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s0qKqps-K4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2> File Audio mp3 </h2>
+    <div class = "P2_C9">
+        <h3> Bản ghi âm tiếng gõ bàn phím </h3>
+        <audio controls> 
+            <source src="./AUDIO/P2_C9.mp3"> File audio mp3 
+        </audio>
+    </audio>
+    </div>
+    <h2> Portfolio cá nhân </h2>
+    <div class = "P2_C10">
+        <img src="./IMG/P2_C7(1).jpg" alt= "Ảnh">
+        <p> Mô tả dự án: Đây là một dự án về hệ thống quản lý hoạt động trung tâm đại học </p>
+        <a href="https://github.com/uyennhi1909/Nhom1"> Link github </a>
+    </div>
+    <div class = "P2_C10">
+        <img src = "./IMG/P2_C10.jpg" alt= "Ảnh">
+        <p> Mô tả dự án: Đây là một dự án về hệ thống quản lý hoạt động trung tâm đại học </p>
+        <a href="https://github.com/uyennhi1909/Nhom1"> Link github </a>
+    </div>
+    <div class = "P2_C10">
+        <img src="https://picsum.photos/200/300" alt= "Ảnh">
+        <p> Mô tả dự án: Đây là một dự án về hệ thống quản lý hoạt động trung tâm đại học </p>
+        <a href="https://github.com/uyennhi1909/Nhom1"> Link github </a>
+    </div>
+</body>
+</html>
