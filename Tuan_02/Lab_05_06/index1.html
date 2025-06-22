@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2{
+            margin-bottom: 10px; 
+            margin-top: 10px;
+            color:mediumvioletred}
+        .P1_C1 {
+            color:mediumvioletred;
+            text-align: center;
+            font-style: italic;
+            background-color: lavenderblush;
+            font-family: Arial, sans-serif;}
+        #avt {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid mediumvioletred;}
+        li{
+            list-style-type: none;
+            color:mediumvioletred;}
+        li:nth-child(odd) {
+            background-color: lavenderblush;}
+        li:nth-child(even) {
+            background-color: pink;}
+        li:hover {
+            background-color: hotpink;
+            color: white;
+            transform: scale(1.05) ;
+            cursor: pointer;
+            transition: 0.5s;}
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            color:mediumvioletred;}
+        th,td {
+            border: 3px solid mediumvioletred;
+            text-align: center;}
+        tr:nth-child(even) { 
+            background-color: lightpink}
+        tr:hover {
+            background-color: hotpink;
+            color: white;
+            transform: scale(1.02) ;
+            cursor: pointer;
+            transition: 0.5s;}
+        form {
+            color:mediumvioletred;
+            margin: 0 auto;
+            padding: 20px; 
+            border-radius: 10px;}
+        input {
+            border-radius: 5px;
+            border-color: hotpink;
+            margin-top: 2px;
+            margin-bottom: 2px;}
+        button {
+            background-color: white;
+            color: mediumvioletred;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;}
+        button:hover {
+            background-color: hotpink;
+            color: white;
+            transform: translateY(-2px);}
+        a {
+            color:mediumvioletred;
+            text-align: center;
+            text-decoration: none;}
+        a:hover {
+            background-color: hotpink;
+            color:white}
+        a:active{
+            text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <div class = "P1_C1"> 
+        <img src="./IMG/P1_C1.jpg" alt="Ảnh đại diện" id = "avt">
+        <h1> Giới thiệu bản thân </h1> 
+        <p> Họ tên: <strong> Ngô Uyên Nhi </strong> </p>
+        <p> Ngày sinh: 19/09/2005 </p>
+        <p> Sở thích: Xem phim, đọc truyện </p>
+        <p> Mô tả ngắn: Thân thiện, hòa đồng, ham học hỏi </p>
+    </div>
+    <div class = "P1_C2">
+        <h2> Danh sách môn học yêu thích </h2> 
+        <ul>
+            <li> Hệ thống và công nghệ Web </li>
+            <li> Kinh tế học </li>
+            <li> Nhập môn lập trình </li>
+            <li> Đồ họa ứng dụng </li>
+        </ul>
+    </div>
+    <h2> Thời khóa biểu </h2>
+    <div class = "P1_C3"> 
+        <table border = "1">
+            <tr> 
+                <th> Thứ </th>
+                <th> Môn học </th>
+                <th> Giờ học </th>
+                <th> Phòng học </th>
+            </tr>
+            <tr> 
+                <td> Thứ 2 </td>
+                <td> CN Web </td>
+                <td> 6:30 - 9:00 </td>
+                <td> N8.02 </td>
+            </tr>
+            <tr> 
+                <td> Thứ 3 </td>
+                <td> CN Web </td>
+                <td> 6:30 - 9:00 </td>
+                <td> N8.02 </td>
+            </tr>
+            <tr> 
+                <td> Thứ 5 </td>
+                <td> CN Web </td>
+                <td> 7:10 - 11:40 </td>
+                <td> H9.03 </td>
+            </tr>
+        </table>
+    </div>
+    <h2> Form đăng ký thông tin cá nhân </h2>
+    <div class = "P1_C4"> 
+        <form>
+            Họ tên: <input type = "text"/>
+            <br>
+            Email: <input type = "email"/>
+            <br>
+            Số điện thoại: <input type = "tel"/>
+            <br>
+            Giới tính: 
+            <input type = "radio" name = "gioitinh" value = "Nam"/> Nam
+            <input type = "radio" name = "gioitinh" value = "Nữ"/> Nữ
+            <input type = "radio" name = "gioitinh" value = "Khác"/> Khác
+            <br><br>
+            <button> Gửi </button>
+        </form>
+    </div>
+    <h2> Liên kết điều hướng </h2>
+    <div class = "P1_C5"> 
+        <a href="https://www.w3schools.com/css/" target = "_blank"> Trang tự học css </a>
+        <br>
+        <a href="https://www.w3schools.com/html/" target = "_blank"> Trang tự học css </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu phần 3 câu 13</title>
+    <style>
+        .P3_C13{
+            background-color: lavenderblush;
+            color: mediumvioletred;
+            border: 2px solid mediumvioletred;
+            border-radius: 15px;
+            padding: 20px;}
+        h1 {
+            margin-top: 0 ;
+            color: mediumvioletred;}
+        input{
+            background-color: white;
+            color: mediumvioletred;}
+        input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color: hotpink;
+            color: white;}
+    </style>
+</head>
+<body>
+    <h1> Form đặt bàn quán ăn </h1>
+    <div class="P3_C13">
+        <form>
+            <h3> Họ Tên Người Đặt Bàn: </h3> 
+            <input type = "text" name = "username"/>
+            <br>
+            <h3> Số người: </h3>
+            <input type = "number"/>
+            <br>
+            <h3> Ngày giờ đặt bàn:  </h3>
+            <input type = "datetime-local"/>
+            <br>
+            <h3> Yêu cầu đặc biệt: </h3>
+            <textarea name="opinion" id="op1" cols="50" rows="5"></textarea>
+            <br>
+            <br>
+            <input type = "submit" value = "Đặt bàn"/> 
+            <input type = "reset" value = "Xoá"/> 
+        </form>
+    </div>
+</body>
+</html>
