@@ -5,85 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .P1_C1{
+        h1, h2{
+            margin-bottom: 10px; 
+            margin-top: 10px;
+            color:mediumvioletred}
+        .P1_C1 {
+            color:mediumvioletred;
             text-align: center;
             font-style: italic;
-            background-color: #D3D3D3;
-            font-family: Arial, sans-serif; /*font chữ dự phòng*/
-        }
-        #AVT {
-            width: 100px;
-            height: 100px;
+            background-color: lavenderblush;
+            font-family: Arial, sans-serif;}
+        #avt {
+            width: 150px;
+            height: auto;
             border-radius: 50%;
-            border: 3px solid #696969;
-        }
-        li {
-            background-color: #696969 ;
-            padding-left: 20px 20px;
-        }
+            border: 3px solid mediumvioletred;}
+        li{
+            list-style-type: none;
+            color:mediumvioletred;}
         li:nth-child(odd) {
-            background-color: #D3D3D3 ;
-        }
+            background-color: lavenderblush;}
+        li:nth-child(even) {
+            background-color: pink;}
         li:hover {
-            background-color: black;
+            background-color: hotpink;
             color: white;
             transform: scale(1.05) ;
-        }
+            cursor: pointer;
+            transition: 0.5s;}
         table {
             width: 100%;
-            border-collapse: collapse; /*gộp viền bảng lại với nhau*/
-        }
-        td {
-            border: 5px solid gray;
             text-align: center;
-        }
-        tr:nth-child(even) { /*Hàng chẵn*/
-            background-color: #d3d3d3
-        }
-        tr:nth-child(odd) { /*Hàng lẻ*/
-            background-color: #696969
-        }
+            border-collapse: collapse;
+            color:mediumvioletred;}
+        th,td {
+            border: 3px solid mediumvioletred;
+            text-align: center;}
+        tr:nth-child(even) { 
+            background-color: lightpink}
         tr:hover {
-            background-color: white;
-        }
+            background-color: hotpink;
+            color: white;
+            transform: scale(1.02) ;
+            cursor: pointer;
+            transition: 0.5s;}
         form {
-            margin: 0 auto; 
-            border-radius: 10px;
-        }
+            color:mediumvioletred;
+            margin: 0 auto;
+            padding: 20px; 
+            border-radius: 10px;}
         input {
             border-radius: 5px;
-        }
+            border-color: hotpink;
+            margin-top: 2px;
+            margin-bottom: 2px;}
+        button {
+            background-color: white;
+            color: mediumvioletred;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;}
         button:hover {
-            background-color: grey;
-            transform: translateY(-2px);
-        }
-        .P1_C5 {
-            text-align: center;
-        }
+            background-color: hotpink;
+            color: white;
+            transform: translateY(-2px);}
         a {
+            color:mediumvioletred;
             text-align: center;
-            text-decoration: none;
-        }
+            text-decoration: none;}
         a:hover {
-            background-color: #d3d3d3;
-            color: black;
-        }
+            background-color: hotpink;
+            color:white}
         a:active{
-            text-decoration: underline;
-        }
+            text-decoration: underline;}
     </style>
 </head>
 <body>
-    <h1> Giới thiệu bản thân </h1> 
     <div class = "P1_C1"> 
-        <img src="https://picsum.photos/200/300" alt="Ảnh đại diện" id = "AVT">
+        <img src="./IMG/P1_C1.jpg" alt="Ảnh đại diện" id = "avt">
+        <h1> Giới thiệu bản thân </h1> 
         <p> Họ tên: <strong> Ngô Uyên Nhi </strong> </p>
         <p> Ngày sinh: 19/09/2005 </p>
         <p> Sở thích: Xem phim, đọc truyện </p>
         <p> Mô tả ngắn: Thân thiện, hòa đồng, ham học hỏi </p>
     </div>
-    <h2> Danh sách môn học yêu thích </h2>
-    <div class = "P1_C2"> 
+    <div class = "P1_C2">
+        <h2> Danh sách môn học yêu thích </h2> 
         <ul>
             <li> Hệ thống và công nghệ Web </li>
             <li> Kinh tế học </li>
@@ -95,10 +102,10 @@
     <div class = "P1_C3"> 
         <table border = "1">
             <tr> 
-                <td> Thứ </td>
-                <td> Môn học </td>
-                <td> Giờ học </td>
-                <td> Phòng học </td>
+                <th> Thứ </th>
+                <th> Môn học </th>
+                <th> Giờ học </th>
+                <th> Phòng học </th>
             </tr>
             <tr> 
                 <td> Thứ 2 </td>
@@ -111,6 +118,12 @@
                 <td> CN Web </td>
                 <td> 6:30 - 9:00 </td>
                 <td> N8.02 </td>
+            </tr>
+            <tr> 
+                <td> Thứ 5 </td>
+                <td> CN Web </td>
+                <td> 7:10 - 11:40 </td>
+                <td> H9.03 </td>
             </tr>
         </table>
     </div>
@@ -127,11 +140,11 @@
             <input type = "radio" name = "gioitinh" value = "Nam"/> Nam
             <input type = "radio" name = "gioitinh" value = "Nữ"/> Nữ
             <input type = "radio" name = "gioitinh" value = "Khác"/> Khác
-            <br>
+            <br><br>
             <button> Gửi </button>
         </form>
     </div>
-    <h3> Liên kết điều hướng </h3>
+    <h2> Liên kết điều hướng </h2>
     <div class = "P1_C5"> 
         <a href="https://www.w3schools.com/css/" target = "_blank"> Trang tự học css </a>
         <br>
