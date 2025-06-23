@@ -30,20 +30,32 @@
             border: 2px solid lavenderblush;}
         .P2_C10 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3,1fr);
             gap: 20px;
-            background-color: #f9f9f9;
             padding: 20px;
             background-color: lavenderblush;}
-        .P2_C10 > img {
-            width: 100%;
-            border-radius: 10px;
-            height: 150px;
-            object-fit: cover;}
-        .P2_C10:hover {
+        .Duan{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        .Duan img{
+            width: auto;
+            height: 100%;
+            border: 3px solid pink;
+            border-radius: 20px;
+        }
+        .Duan:hover {
             background-color: lightpink;
             color: white;
-            transform: scale(1.05);}
+            transform: scale(1.05);
+            border-radius: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -75,20 +87,33 @@
     </audio>
     </div>
     <h2> Portfolio cá nhân </h2>
-    <div class = "P2_C10">
-        <img src="./IMG/P2_C7(1).jpg" alt= "Ảnh">
-        <p> Mô tả dự án: Đây là một dự án về hệ thống quản lý hoạt động trung tâm đại học </p>
-        <a href="https://github.com/uyennhi1909/Nhom1"> Link github </a>
+    <div class="P2_C10">
+    <div class="Duan">
+        <img src="./IMG/P2_C7(1).jpg" alt="Ảnh">
+        <div class="content">
+        <p><strong>Hệ thống quản lý hoạt động trung tâm đại học</strong></p>
+        <p>Mô tả dự án: Dự án giúp quản lý lịch học, đăng ký, tài nguyên...</p>
+        <a href="https://github.com/uyennhi1909/Nhom1">Link GitHub</a>
+        </div>
     </div>
-    <div class = "P2_C10">
-        <img src = "./IMG/P2_C10.jpg" alt= "Ảnh">
-        <p> Mô tả dự án: Đây là một dự án về hệ thống quản lý hoạt động trung tâm tiếng anh </p>
-        <a href="https://github.com/uyennhi1909/Nhom1"> Link github </a>
+
+    <div class="Duan">
+        <img src="./IMG/P2_C10.jpg" alt="Ảnh">
+        <div class="content">
+        <p><strong>Hệ thống trung tâm tiếng Anh</strong></p>
+        <p>Mô tả dự án: Quản lý học viên, giáo viên, lớp học và tài liệu.</p>
+        <a href="https://github.com/uyennhi1909/Nhom1">Link GitHub</a>
+        </div>
     </div>
-    <div class = "P2_C10">
-        <img src="https://picsum.photos/200/300" alt= "Ảnh">
-        <p> Mô tả dự án: Đây là một dự án về hệ thống quản lý hoạt động trung tâm đại học </p>
-        <a href="https://github.com/uyennhi1909/Nhom1"> Link github </a>
+
+    <div class="Duan">
+        <img src="https://picsum.photos/200/300" alt="Ảnh">
+        <div class="content">
+        <p><strong>Website tin tức giáo dục</strong></p>
+        <p>Mô tả dự án: Trang web hiển thị tin tức, phân loại chuyên mục.</p>
+        <a href="https://github.com/uyennhi1909/Nhom1">Link GitHub</a>
+        </div>
+    </div>
     </div>
 </body>
 </html>
