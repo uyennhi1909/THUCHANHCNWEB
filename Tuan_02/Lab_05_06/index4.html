@@ -10,37 +10,89 @@
             color: mediumvioletred;
             border: 2px solid mediumvioletred;
             border-radius: 15px;
-            padding: 20px;}
+            padding: 20px;
+        }
         h1 {
+            text-align: center;
             margin-top: 0 ;
             color: mediumvioletred;}
         input{
             background-color: white;
-            color: mediumvioletred;}
-        input[type="submit"]:hover, input[type="reset"]:hover{
+            color: mediumvioletred;
+            border: 2px solid mediumvioletred;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button{
+            color: mediumvioletred;
+            background-color: pink;
+            border: 2px solid mediumvioletred;
+            border-radius: 10px;
+            padding: 5px 20px;
+        }
+        button:hover{
             background-color: hotpink;
-            color: white;}
+            color: white;
+            border: 2px solid mediumvioletred;
+        }
+        input:focus, textarea:focus{
+            background-color: lightpink;
+            border: 2px solid mediumvioletred;
+        }
+        textarea{
+            border: 2px solid mediumvioletred;
+            border-radius: 5px;
+            width: 100%;
+        }
+        form{
+            display: grid;
+            grid-template-areas: 
+                "name name"
+                "info yc"
+                "button button";
+            gap: 20px;
+        }
+        .name{
+            grid-area: name;
+        }
+        .info{
+            grid-area: info;
+        }
+        .yc{
+            grid-area: yc;
+        }
+        .button{
+            grid-area: button;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
     </style>
 </head>
 <body>
     <h1> Form đặt bàn quán ăn </h1>
     <div class="P3_C13">
         <form>
-            <h3> Họ Tên Người Đặt Bàn: </h3> 
-            <input type = "text" name = "username"/>
-            <br>
-            <h3> Số người: </h3>
-            <input type = "number"/>
-            <br>
-            <h3> Ngày giờ đặt bàn:  </h3>
-            <input type = "datetime-local"/>
-            <br>
-            <h3> Yêu cầu đặc biệt: </h3>
-            <textarea name="opinion" id="op1" cols="50" rows="5"></textarea>
-            <br>
-            <br>
-            <input type = "submit" value = "Đặt bàn"/> 
-            <input type = "reset" value = "Xoá"/> 
+            <div class="name">
+                <h3> Họ Tên Người Đặt Bàn: </h3> 
+                <input type = "text" name = "username"/>
+            </div>
+            <div class="info">
+                <h3> Số người: </h3>
+                <input type = "number"/>
+                <h3> Ngày giờ đặt bàn:  </h3>
+                <input type = "datetime-local"/>
+            </div>
+            <div class="yc">
+                <h3> Yêu cầu đặc biệt: </h3>
+                <textarea name="opinion" id="op1" cols="50" rows="6"></textarea>
+            </div>
+            <div class="button">
+                <button type = "submit">Đặt bàn</button> 
+                <button type = "reset">Xoá</button> 
+            </div>
         </form>
     </div>
 </body>
