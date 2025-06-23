@@ -13,12 +13,33 @@
             color: mediumvioletred;
             border: 2px solid mediumvioletred;
             border-radius: 15px;
-            padding: 20px;}
-        input{
+            margin: auto;
+            padding: 10px;
+        }
+        form{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        input:focus{
             padding: 20px;
-            width: 100%
             transform: scale(1.2);
             accent-color: hotpink;}
+        input, textarea {
+            padding: 0;
+            border: 2px solid mediumvioletred;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button{
+            border-radius: 5px;
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
         button:hover{
             background-color: hotpink;
             color: white;
@@ -58,14 +79,18 @@
                 <input type="radio" id="5sao" name="rate" value="5">
                 <label for="5sao">★</label>
             </div>
-            <br>
-            <h2> Email của khách hàng </h2> 
-            <input type = "email"/>
-            <h2> Ý kiến của khách hàng </h2>
-            <textarea name="opinion" id="op1" cols="50" rows="10"></textarea>
-            <br><br>
-            <button type="submit"> Xác nhận gửi phản hồi </button> 
-            <button type="reset"> Xoá phản hồi </button> 
+            <div class="email">
+                <h2> Email của khách hàng </h2> 
+                <input type = "email"/>
+            </div>
+            <div class="opinion">
+                <h2> Ý kiến của khách hàng </h2>
+                <textarea name="opinion" id="op1" cols="50" rows="10"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit"> Xác nhận gửi phản hồi </button> 
+                <button type="reset"> Xoá phản hồi </button> 
+            </div>
         </form>
     </div>
 </body>
