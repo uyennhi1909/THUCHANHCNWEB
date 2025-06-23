@@ -25,6 +25,20 @@
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;}
+        input[type="radio"]{
+            display: none;}
+        .star{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;}
+        .star label{
+            color:lightgray;}
+        .star label:hover{
+            color: gold;}
+        .star label:hover ~ label {
+            color: gold;}
+        input[type="radio"]:checked ~ label {
+            color: gold;}
     </style>
 </head>
 <body>
@@ -34,15 +48,15 @@
             <h2> Đánh giá của khách hàng </h2>
             <div class="star">
                 <input type="radio" id="1sao" name="rate" value="1">
-                <label for="1sao">★</label><br>
+                <label for="1sao">★</label>
                 <input type="radio" id="2sao" name="rate" value="2">
-                <label for="2sao">★★</label><br>
+                <label for="2sao">★</label>
                 <input type="radio" id="3sao" name="rate" value="3">
-                <label for="3sao">★★★</label><br>
+                <label for="3sao">★</label>
                 <input type="radio" id="4sao" name="rate" value="4">
-                <label for="4sao">★★★★</label><br>
+                <label for="4sao">★</label>
                 <input type="radio" id="5sao" name="rate" value="5">
-                <label for="5sao">★★★★★</label><br>
+                <label for="5sao">★</label>
             </div>
             <br>
             <h2> Email của khách hàng </h2> 
