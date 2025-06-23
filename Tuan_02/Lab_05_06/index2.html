@@ -6,19 +6,33 @@
     <title>Document</title>
     <style>
         .P2_C6 {
-            text-align: center;}
-        .P2_C6 > img {
-            border-radius: 15px;
-            box-shadow: 10px 5px lavenderblush;}
-        .P2_C7 {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;}
-        .P2_C7 > img {
+            align-items: center;
+            justify-content: center;
+            gap: 20px;}
+        .P2_C6 img {
+            border-radius: 15px;
+            box-shadow: 10px 5px hotpink;}
+        .P2_C7 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .P2_C7 img {
             width: 200px;
             height: 150px;
-            object-fit: cover;
-            border-radius: 10px;}
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .P2_C7 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .P2_C7 {
+                grid-template-columns: 1fr;
+            }
+        }
         .P2_C8 {
             text-align: center;
             background-color: lavenderblush;
@@ -49,9 +63,11 @@
 </head>
 <body>
     <h1> Phần 2 </h1>
-    <div class = "P2_C6">
+    <div class="P2_C6">
         <img src="./IMG/P2_C6.jpg" alt="Ảnh đại diện">
-        <figcaption> Đây là ảnh đại diện </figcaption>
+        <div class="avt">
+            <p>Đây là ảnh đại diện</p>
+        </div>
     </div>
     <h2> Thư viện ảnh </h2>
     <div class = "P2_C7">
