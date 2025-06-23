@@ -10,69 +10,75 @@
             color: mediumvioletred;
             border-radius: 5px;
             text-align: left;
-            padding-left: 10px;}
+            padding: 20px;
+            }
         h1, h2{
             margin-bottom: 10px; 
             margin-top: 10px;}
-        .P3_C11 input {
-            border: 1px solid hotpink;
+        input {
             color: mediumvioletred;
-            box-shadow: 5px 5px ;
+            border: 1px solid hotpink;
             border-radius: 5px;
             margin-top: 5px;
             margin-bottom: 5px;}
-        button{
-            border: 2px solid hotpink;
-            border-radius: 5px;
-            background-color: white;
-            color: mediumvioletred;}
-        button:hover{
+        .P3_C11 input[type = "text"], .P3_C11 input[type = "password"]{
+            box-shadow: 5px 5px;
+        }
+        input[type="submit"]:hover{
             background-color: hotpink;
-            color: white;}
-        select  {
-            background-color: lavenderblush;
-            color: mediumvioletred;}
+            color: white;
+            transform:scale(1.05);
+        }
+        select{
+            color: mediumvioletred;
+        }
+        input[type="radio"], input[type="checkbox"]{
+            accent-color: hotpink;
+        } 
+        .P3_C11
     </style>
 </head>
 <body>
+    <div class  = "P3_C11">
     <h1> Đăng nhập </h1>
-    <div class="P3_C11">
-        <form>
-            Username: <input type = "text" name = "username"/>
-            <br>
-            Password: <input type = "password" name = "password"/>
-        </form>
-    <h1> Khảo sát ý kiến </h1>
+    <form>
+        Username: <input type = "text" name = "username"/>
+        <br>
+        Password: <input type = "password" name = "password"/>
+        <br>
+        <input type = "submit" value = "Đăng nhập"/> 
+    </form>
     </div>
-    <div class="P3_C12">
-        <form>
-            <h2> Giới tính của bạn là gì? </h2>
-            <input type = "radio" name = "gioitinh" value = "Nam"/> Nam
-            <input type = "radio" name = "gioitinh" value = "Nữ"/> Nữ
-            <input type = "radio" name = "gioitinh" value = "Khác"/> Khác
-            <br>
-            <h2> Bạn là sinh viên năm mấy? </h2>
-            Tôi là sinh viên 
-            <select>
-                <option value="Năm 1"> Năm 1 </option>
-                <option value="Năm 2"> Năm 2 </option>
-                <option value="Năm 3"> Năm 3 </option>
-                <option value="Năm 4"> Năm 4 </option>
-            </select>
-            <h2> Bạn thích màu gì? </h2>
-            <input type = "checkbox" name = "corlor"/> Đỏ <br>
-            <input type = "checkbox" name = "corlor"/> Cam <br>
-            <input type = "checkbox" name = "corlor"/> Vàng <br>
-            <input type = "checkbox" name = "corlor"/> Lục <br>
-            <input type = "checkbox" name = "corlor"/> Lam <br>
-            <input type = "checkbox" name = "corlor"/> Chàm <br>
-            <input type = "checkbox" name = "corlor"/> Tím <br>
-            <input type = "checkbox" name = "corlor"/> Hồng <br>
-            <h2> Góp ý </h2>
-            <textarea name="opinion" id="op1" cols="50" rows="5"></textarea>
-            <br><br>
-            <button> Xác nhận gửi </button>
-        </form>
+    <div class = "P3_C12">
+    <h1> Khảo sát ý kiến </h1>
+    <form>
+        <h2> Giới tính của bạn là gì? </h2>
+        <input type = "radio" name = "gioitinh" value = "Nam"/> Nam
+        <input type = "radio" name = "gioitinh" value = "Nữ"/> Nữ
+        <input type = "radio" name = "gioitinh" value = "Khác"/> Khác
+        <br>
+        <h2> Bạn là sinh viên năm mấy? </h2>
+        Tôi là sinh viên 
+        <select>
+            <option value="Năm 1"> Năm 1 </option>
+            <option value="Năm 2"> Năm 2 </option>
+            <option value="Năm 3"> Năm 3 </option>
+            <option value="Năm 4"> Năm 4 </option>
+        </select>
+        <h2> Bạn thích màu gì? </h2>
+        <input type = "checkbox" name = "corlor"/> Đỏ <br>
+        <input type = "checkbox" name = "corlor"/> Cam <br>
+        <input type = "checkbox" name = "corlor"/> Vàng <br>
+        <input type = "checkbox" name = "corlor"/> Lục <br>
+        <input type = "checkbox" name = "corlor"/> Lam <br>
+        <input type = "checkbox" name = "corlor"/> Chàm <br>
+        <input type = "checkbox" name = "corlor"/> Tím <br>
+        <input type = "checkbox" name = "corlor"/> Hồng <br>
+        <h2> Góp ý </h2>
+        <textarea name="opinion" id="op1" cols="50" rows="5"></textarea>
+        <br>
+        <input type = "submit" value = "Xác nhận gửi"/> 
+    </form>
     </div>
 </body>
 </html>
