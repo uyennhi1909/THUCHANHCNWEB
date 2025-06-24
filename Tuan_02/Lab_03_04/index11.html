@@ -3,167 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Phần 4 Câu 20</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
             background-color: #f5f5f5;
-            line-height: 1.6;
         }
-        
-        .cv-container {
+        .cv {
             max-width: 900px;
             margin: 0 auto;
             background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px gray;
             display: grid;
             grid-template-columns: 1fr 2fr;
-            min-height: 100vh;
         }
-        
-        .cot-trai {
+        .left {
             background-color: #2c3e50;
             color: white;
-            padding: 30px 25px;
+            padding: 30px 20px;
+            font-size: 20px;
         }
-        
-        .cot-phai {
+        .right {
             background-color: white;
             padding: 30px 25px;
             color: #333;
+            font-size: 20px;
         }
-        
-        .tieude-cv {
+        .header {
             text-align: center;
             margin-bottom: 30px;
         }
-        
-        .tieude-cv h1 {
-            font-size: 36px;
-            margin: 0;
+        h1 {
+            font-size: 50px;
+            margin: 5px 0 10px 10px;
             color: #2c3e50;
-            font-weight: bold;
         }
-        
-        .tieude-cv h2 {
-            font-size: 24px;
-            margin: 10px 0 0 0;
-            color: #7f8c8d;
+        h2 {
+            font-size: 30px;
+            color: #232b2c;
             font-weight: normal;
+            font-style: italic;
+            margin: 0;
         }
-        
-        .anh-canhan {
-            text-align: center;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid white;
             margin-bottom: 30px;
         }
-        
-        .anh-canhan img {
-            width: 150px;
-            height: 180px;
-            border-radius: 10px;
-            border: 4px solid white;
-            object-fit: cover;
-        }
-        
-        .thongtin-canhan h3,
-        .kynang h3,
-        .hocvan h3,
-        .kinhnghiem h3 {
+        h3 {
             color: #3498db;
-            font-size: 18px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
+            font-size: 24px;
             border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
-        
-        .cot-trai h3 {
-            color: #ecf0f1 !important;
+        .left h3 {
+            color: white !important;
             border-bottom-color: #ecf0f1 !important;
         }
-        
-        .thongtin-canhan table {
+        table {
             width: 100%;
             border-collapse: collapse;
+        }    
+        td {
+            padding: 5px 0;
         }
-        
-        .thongtin-canhan td {
-            padding: 8px 0;
-            border-bottom: 1px solid #34495e;
-        }
-        
-        .thongtin-canhan td:first-child {
+        td:first-child {
             font-weight: bold;
-            width: 40%;
-        }
-        
-        .kynang ul,
-        .hocvan ul,
-        .kinhnghiem ul {
+        }  
+        ul {
             list-style: none;
-            padding: 0;
+            padding: 10px;
         }
-        
-        .kynang li,
-        .hocvan li,
-        .kinhnghiem li {
-            background-color: #ecf0f1;
-            color: #2c3e50;
-            padding: 10px 15px;
-            margin-bottom: 8px;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .cot-phai .kynang li,
-        .cot-phai .hocvan li,
-        .cot-phai .kinhnghiem li {
+        li {
             background-color: #f8f9fa;
             color: #2c3e50;
+            padding: 20px;
+            margin-bottom: 8px;
+            border-radius: 5px;
         }
-        
-        .lienhe h3 {
-            color: #ecf0f1;
-            border-bottom-color: #ecf0f1;
-        }
-        
         .lienhe p {
             margin: 10px 0;
-            font-size: 14px;
+            font-size: 20px;
         }
-        
         .lienhe a {
-            color: #3498db;
+            color: white;
             text-decoration: none;
+            line-height: 1.5;
         }
-        
         .lienhe a:hover {
             text-decoration: underline;
+            color: #3498db ;
         }
-        
         .muctieu {
             background-color: #e8f4f8;
             padding: 20px;
             border-radius: 8px;
-            border-left: 5px solid #3498db;
             margin-bottom: 25px;
-        }
-        
-        .muctieu h3 {
-            color: #2c3e50 !important;
-            border-bottom-color: #3498db !important;
         }
     </style>
 </head>
 <body>
-    <div class="cv-container">
-        <div class="cot-trai">
-            <div class="anh-canhan">
-                <img src="./IMG/P4_C20.jpg" alt="Ảnh cá nhân">
-            </div>
-            
-            <div class="thongtin-canhan">
+    <div class="cv">
+        <div class="left">
+            <img src="./IMG/P4_C20.jpg" alt="Ảnh cá nhân">
+            <div class="thongtin">
                 <h3>THÔNG TIN CÁ NHÂN</h3>
                 <table>
                     <tr>
@@ -188,7 +132,6 @@
                     </tr>
                 </table>
             </div>
-            
             <div class="lienhe">
                 <h3>LIÊN HỆ</h3>
                 <p><strong>Địa chỉ:</strong><br>
@@ -200,70 +143,59 @@
                 <p><strong>Facebook:</strong><br>
                 <a href="https://www.facebook.com/">facebook.com/uyennhi</a></p>
             </div>
-            
             <div class="kynang">
                 <h3>KỸ NĂNG</h3>
                 <ul>
                     <li>Microsoft Office (Word, Excel, PowerPoint)</li>
-                    <li>Thiết kế đồ họa cơ bản (Photoshop)</li>
-                    <li>Tiếng Anh giao tiếp</li>
-                    <li>Kỹ năng thuyết trình</li>
-                    <li>Làm việc nhóm</li>
-                </ul>
+                    <li>Thiết kế đồ họa cơ bản (Adobe Illustrator, Photoshop)</li>
+                    <li>Lập trình Python (cơ bản), cơ sở dữ liệu SQL </li>
+                    <li>Nghiên cứu thị trường e-commerce</li>
+                    <li>Phân tích Google Analytics</li>
             </div>
         </div>
-        
-        <!-- Cột phải - màu xám nhạt/trắng -->
-        <div class="cot-phai">
-            <div class="tieude-cv">
-                <h1>CURRICULUM VITAE</h1>
-                <h2>NGÔ UYÊN NHI</h2>
+        <div class="right">
+            <div class="header">
+                <h1>NGÔ UYÊN NHI</h1>
+                <h2>Thương mại điện tử</h2>
             </div>
-            
             <div class="muctieu">
                 <h3>MỤC TIÊU NGHỀ NGHIỆP</h3>
-                <p>Tìm kiếm cơ hội thực tập và làm việc trong lĩnh vực kinh doanh và marketing. 
-                Mong muốn được học hỏi, phát triển kỹ năng chuyên môn và đóng góp cho sự phát triển của công ty.</p>
+                <p>Sinh viên năm 3 ngành Thương mại Điện tử với GPA 3.56, 
+                    yêu thích khám phá các xu hướng mới trong lĩnh vực marketing số. 
+                    Tôi đam mê công nghệ và mong muốn phát triển trong lĩnh vực phân tích dữ liệu 
+                    thương mại điện tử, tối ưu hóa trải nghiệm người dùng và 
+                    hỗ trợ ra quyết định kinh doanh dựa trên số liệu.</p>
             </div>
-            
             <div class="hocvan">
                 <h3>HỌC VẤN</h3>
                 <ul>
-                    <li><strong>2023 - 2027:</strong> Sinh viên Đại học Kinh tế TP.HCM<br>
-                    Chuyên ngành: Quản trị Kinh doanh<br>
-                    GPA: 8.2/10</li>
-                    <li><strong>2020 - 2023:</strong> Trường THPT Hóc Môn<br>
-                    Tốt nghiệp loại Giỏi<br>
-                    Điểm trường: 8.5/10</li>
-                    <li><strong>2016 - 2020:</strong> Trường THCS Đông Thạnh<br>
-                    Học sinh giỏi 4 năm liên tiếp</li>
+                    <li><strong>2023 - 2027:</strong> Sinh viên Đại học Công nghiệp TP.HCM<br>
+                    Chuyên ngành: Thương mại Điện tử <br>
+                    GPA: 3.56/4.0 </li>
                 </ul>
             </div>
-            
             <div class="kinhnghiem">
                 <h3>KINH NGHIỆM</h3>
                 <ul>
-                    <li><strong>06/2024 - 08/2024:</strong> Thực tập sinh Marketing<br>
-                    Công ty ABC Co., Ltd<br>
-                    - Hỗ trợ xây dựng content cho mạng xã hội<br>
-                    - Tham gia các chiến dịch quảng cáo online</li>
-                    <li><strong>2023 - Hiện tại:</strong> Gia sư Toán - Tiếng Anh<br>
-                    - Dạy học sinh cấp 2, cấp 3<br>
-                    - Phát triển kỹ năng giao tiếp và kiên nhẫn</li>
-                    <li><strong>2022 - 2023:</strong> Tình nguyện viên<br>
-                    Mùa hè xanh, CLB từ thiện địa phương<br>
-                    - Tổ chức các hoạt động cộng đồng<br>
-                    - Kỹ năng làm việc nhóm và lãnh đạo</li>
+                    <li><strong>2023</strong> Tình nguyện viên Chương trình Trung Thu - Long An<br>
+                    - Tham gia tổ chức hoạt động thiện nguyện cho cộng đồng <br>
+                    - Phát triển kỹ năng giao tiếp và làm việc dưới áp lực</li>
+                    <li><strong>2023-2024</strong> Cộng tác viên Đoàn Khoa Thương mại du lịch<br>
+                    - Hỗ trợ tổ chức các hoạt động sinh viên và sự kiện đoàn thể <br>
+                    - Phối hợp làm việc nhóm tổ chức các chương trình hoạt động ở các bộ phận khác nhau</li>
+                    <li><strong>2024</strong> Tham gia Cuộc thi nghiên cứu khoa học Eureka<br>
+                    - Đề tài: "Nghiên cứu các yếu tố ảnh hưởng đến quyết định hoàn đơn hàng 
+                    của gen Z trên TikTok Shop tại Thành phố Hồ Chí Minh" <br>
+                    - Thu thập và phân tích dữ liệu hành vi người tiêu dùng <br>
+                    - Viết báo cáo nghiên cứu và thuyết trình trước hội đồng chuyên môn <br>
+                    - Rèn luyện kỹ năng phân tích dữ liệu và tư duy nghiên cứu <br>
+                    - Vượt qua vòng loại cấp trường, đạt kinh nghiệm thu thập và phân tích dữ liệu nghiên cứu</li>
                 </ul>
             </div>
-            
-            <div class="sothich">
-                <h3>SỞ THÍCH</h3>
+            <div class="chungchi">
+                <h3>CHỨNG CHỈ</h3>
                 <ul>
-                    <li>Đọc sách kinh tế và tâm lý học</li>
-                    <li>Du lịch và khám phá văn hóa</li>
-                    <li>Chụp ảnh và chỉnh sửa ảnh</li>
-                    <li>Tham gia các hoạt động thể thao</li>
+                    <li>- Chứng chỉ Tin học ứng dụng cơ bản - Loại Giỏi (2023)</li>
                 </ul>
             </div>
         </div>
