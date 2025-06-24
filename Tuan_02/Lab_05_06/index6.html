@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu phần 3 câu 15</title>
+    <style>
+        body{
+            color: mediumvioletred;
+            background-color: lavenderblush;
+        }
+        h1{
+            text-align: center;
+            margin: 10px;
+        }
+        h2{
+            margin: 5px 0;
+        }
+        form{
+            border: 5px solid hotpink;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: left;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        input::placeholder{
+            color: rgb(158, 114, 142);
+        }
+        .info input, .diachi input{
+            width: 100%;
+            color: mediumvioletred;
+            border-radius: 5px;
+            border: 1px solid mediumvioletred;
+            margin: 2px 0;
+        }
+        input:focus {
+            background-color: lightpink;
+        }
+        .payment{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .button{
+            margin: 10px;
+            text-align: center;
+            grid-column: 1/span 2;
+            grid-row: 3;
+        }
+        button{
+            color: mediumvioletred;
+            background-color: white;
+            border: 2px solid hotpink;
+            border-radius: 10px;  
+        }
+        button:hover, select:hover{
+            color: white;
+            background-color: lightpink ;
+        }
+        select{
+            color: mediumvioletred ;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid mediumvioletred;
+        }
+        @media (max-width: 768px) {
+            form {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .info,.diachi,.thanhtoan,.button {
+                grid-column: auto !important;
+                grid-row: auto !important;
+            }
+        }
+        .diachi {
+            grid-column:1 ;
+        }
+        .thanhtoan {
+            grid-column: 2;
+            grid-row: 1/span 2;
+        }
+    </style>
+</head>
+<body>
+    <h1> Form thanh toán đơn hàng </h1>
+    <form>
+        <div class="info">
+            <div class="name">
+                <h2> Thông tin cá nhân </h2>
+                <label for="name">Họ và tên:</label> 
+                <input type="text" placeholder="Điền họ và tên" required>
+            </div>
+            <div class="phone">
+                <label for="tel">Số điện thoại: </label> 
+                <input type="tel" placeholder="Số điện thoại của bạn" required>
+            </div>
+            <div class="email">
+                <label for="email"> Email: </label> 
+                <input type="email" placeholder="Vui lòng điền địa chỉ email">
+            </div>
+        </div>
+        <div class="diachi">
+            <h2> Địa chỉ giao hàng </h2>
+            <input type="text" placeholder="Địa chỉ bạn muốn nhận hàng" required>
+        </div>
+        <div class="thanhtoan">
+            <h2> Hình thức thanh toán </h2>
+            <div class="payment">
+                <div class="momo">
+                    <input type="radio" name="Payment" id="Momo"> Momo <br>
+                </div>
+                <div class="cod">
+                    <input type="radio" name="Payment" id="COD"> Thanh toán khi nhận hàng 
+                </div>
+                <div class="vietqr">
+                    <input type="radio" name="Payment" id="VietQR"> VietQR 
+                </div>
+                <div class="bank">
+                    <input type="radio" name="Payment" id="Ngân hàng"> Chuyển khoản ngân hàng
+                    <select name="Bank">
+                        <option value=""> Chọn ngân hàng </option>
+                        <option value="MB Bank"> MB Bank </option>
+                        <option value="VCB Bank"> VCB Bank </option>
+                        <option value="BIDV Bank"> BIDV Bank </option>
+                        <option value="Viettin Bank"> Viettin Bank </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button> Xác nhận thanh toán </button>
+            <button type ="reset"> Xoá </button>
+        </div>
+    </form>
+</body>
+</html>
