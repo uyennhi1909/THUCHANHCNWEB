@@ -3,16 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Phần 4 Câu 19</title>
+    <style>
+        body {
+            margin: 20px;
+            background-color: lavenderblush;
+        }
+        .header {
+            color: rgb(255, 153, 170);
+            font-size: 18px;
+            text-align: center;
+        }
+        h1{
+            text-shadow: 2px 2px pink;
+            color: mediumvioletred;
+            font-size: 40px;
+            margin-bottom: 5px ;
+        }
+        h2 {
+            color: hotpink;
+            font-size: 22px;
+            margin: 10px;
+            text-align: left;
+            border-bottom: 2px solid;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px;
+            background-color: white;
+            font-size: 18px;
+        }
+        th {
+            background-color: hotpink;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid mediumvioletred;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid mediumvioletred;
+            text-align: center;
+        }
+        tr:nth-child(2) { 
+            background-color: white;
+        }
+        
+        tr:nth-child(3) {
+            background-color: lavenderblush;
+        }
+        
+        tr:nth-child(4) { 
+            background-color: lavenderblush;
+        }
+        
+        tr:nth-child(5) { 
+            background-color: rgb(255, 213, 220);
+        }
+        
+        tr:nth-child(6) { 
+            background-color: pink;
+        }
+        
+        tr:nth-child(7) { 
+            background-color: rgb(253, 173, 186);
+        }
+        
+        tr:nth-child(8) { 
+            background-color: rgb(253, 147, 164);
+        }
+        
+        tr:nth-child(9) { 
+            background-color: rgb(255, 116, 139);
+        }
+        .sukien-ganhat {
+            background-color: rgb(255, 190, 231) !important;
+            border: 3px solid mediumvioletred;
+        }
+        .sukien-ganhat td {
+            color: rgb(250, 0, 159);
+        }
+        strong {
+            color: mediumvioletred;
+        }
+
+        small {
+            color: rgb(255, 66, 161);
+            font-style: italic;
+            text-shadow: 2px 0 2px lightgrey;
+        }
+    </style>
 </head>
 <body>
-    <h1>Phần 4 Câu 19</h1>
-    <center>
+    <div class="header">
         <h1>LỊCH SỰ KIỆN TRUNG TÂM VĂN HÓA ABC</h1>
-        <h3>Tháng 6/2025</h3>
-    </center>
+        <p>Tháng 6/2025</p>
+    </div>
     <h2>SỰ KIỆN SẮP DIỄN RA</h2>
-    <table border="2">
+    <table>
         <tr>
             <th>Ngày</th>
             <th>Thời Gian</th>
@@ -37,7 +127,7 @@
             <td>Miễn phí</td>
             <td>Mở cửa</td>
         </tr>
-        <tr>
+        <tr class="sukien-ganhat">
             <td><strong>10/06/2025<br>Thứ 3</strong></td>
             <td>20:00 - 22:00</td>
             <td><strong>Kịch nói<br>"Người mẹ Việt Nam anh hùng"</strong><br><small>Đoàn kịch Thế hệ trẻ</small></td>
@@ -45,6 +135,7 @@
             <td>150.000đ</td>
             <td>Sắp hết vé</td>
         </tr>
+        <tr>
             <td><strong>12/06/2025<br>Thứ 5</strong></td>
             <td>19:30 - 21:30</td>
             <td><strong>Live concert<br>"Những bài hát hay nhất"</strong><br><small>Ca sĩ: Mỹ Tâm</small></td>
