@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Biểu mẫu phần 3 câu 15 </h1>
+    <h2> Form thanh toán đơn hàng </h2>
+    <form>
+        <h3> Vui lòng điền thông tin cá nhân </h3>
+        <label for="name">Họ và tên:</label> 
+        <input type="text" placeholder="Điền họ và tên" required>
+        <br>
+        <label for="tel">Số điện thoại: </label> 
+        <input type="tel" placeholder="Số điện thoại của bạn" required>
+        <br>
+        <label for="email"> Email: </label> 
+        <input type="email" placeholder="Vui lòng điền địa chỉ email">
+        <br>
+        <h3> Địa chỉ giao hàng </h3>
+        <input type="text" placeholder="Địa chỉ bạn muốn nhận hàng" required>
+        <h3> Hình thức thanh toán </h3>
+        <input type="radio" name="Payment" id="Momo"> Momo <br>
+        <input type="radio" name="Payment" id="Ngân hàng"> Chuyển khoản ngân hàng
+        <select name="Bank">
+            <option value=""> Chọn ngân hàng </option>
+            <option value="MB Bank"> MB Bank </option>
+            <option value="VCB Bank"> VCB Bank </option>
+            <option value="BIDV Bank"> BIDV Bank </option>
+            <option value="Viettin Bank"> Viettin Bank </option>
+        </select>
+        <br>
+        <input type="radio" name="Payment" id="VietQR"> VietQR <br>
+        <input type="radio" name="Payment" id="COD"> Thanh toán khi nhận hàng <br>
+        <button> Xác nhận thanh toán </button>
+        <button type ="reset"> Xoá </button>
+    </form>
+</body>
+</html>
