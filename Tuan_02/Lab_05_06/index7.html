@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 4 câu 16 </title>
+<style>
+        body {
+            background-color: lavenderblush;
+            color: hotpink;
+        }
+        .sanpham {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 10px 10px pink;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+        .card:hover {
+            transform: scale(1.02);
+            color: white;
+            background-color: pink;
+            box-shadow: 10px 10px lightgrey;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h3 {
+            color: rgb(255, 0, 119);
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .gia {
+            font-size: 20px;
+            font-weight: bold;
+            color: mediumvioletred ;
+            margin: 10px 0;
+        }
+        .button {
+            background: hotpink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .button:hover {
+            background-color: lavenderblush ;
+            color: mediumvioletred;
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: white;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            color: hotpink;
+            font-size: 18px;
+        }
+        .footer h2{
+            color: rgb(255, 0, 119);
+        }
+        .header{
+            padding: 20px;
+            margin-bottom: 10px;
+            color: mediumvioletred;
+            font-size: 22px;
+            text-align: center;
+            background-color: white;
+            border: 5px double ;
+            border-radius: 10px;
+            padding: 2px;
+            margin: 0 150px;
+        }
+        @media (max-width: 1024px){
+            .sanpham{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px){
+            .sanpham{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> Cửa hàng điện thoại </h1>
+    </div>   
+    <div class="sanpham">
+        <div class="card">
+            <img src="./IMG/P4_C16(1).jpg" alt="OPPO Reno10 12GB 256GB">
+            <h3>OPPO Reno10 12GB 256GB</h3>
+            <div class="gia">10.990.000đ</div>
+            <div>
+                <strong>Mô tả:</strong><br>
+                - Kích thước màn hình: 6.74 inches <br>
+                - Camera sau:
+                <ul>
+                    <li> Camera góc rộng: 50 MP </li>
+                    <li> Kính tiềm vọng: 64 MP, PDAF, 5x optical zoom </li>
+                    <li> Camera góc siêu rộng: 8 MP, f/2.2  </li>
+                </ul> 
+                - Camera trước: Camera góc rộng 32 MP, f/2.4 <br>
+                - Chipset: Snapdragon 8 plus Gen 1 8 nhân 
+            </div>
+            <button class="button">Mua ngay</button>
+        </div>
+        <div class="card">
+            <img src="./IMG/P4_C16(2).jpg" alt="OPPO FIND N5">
+            <h3>OPPO FIND N5</h3>
+            <div class="gia">44.990.000đ</div>
+            <div>
+                <strong>Mô tả:</strong><br>
+                - Kích thước màn hình: 8.12 inche <br>
+                - Camera sau: 50MP, ƒ/1.8 OIS (Chính) + 8MP, ƒ/2.2 (Góc rộng) + 50MP, ƒ/2.7 (Tele) <br>
+                - Camera trước:  
+                <ul>
+                    <li> Màn hình chính: 8MP, ƒ/2.4 </li>
+                    <li> Màn hình ngoài: 8MP, ƒ/2.4 </li>
+                </ul>
+                -  Chipset: Snapdragon 8 plus Gen 1 8 nhân 
+            </div>
+            <button class="button">Mua ngay</button>
+        </div>
+        <div class="card">
+            <img src="./IMG/P4_C16(3).jpg" alt="OPPO A3 6GB 128GB">
+            <h3>OPPO A3 6GB 128GB</h3>
+            <div class="gia">4.590.000đ</div>
+            <div>
+                <strong>Mô tả:</strong><br>
+                - Kích thước màn hình: 6.67 inches <br>
+                - Camera sau: 50MP, Khẩu độ F/1.8 <br>
+                - Camera trước: 5 MP, Khẩu độ F/2.2 <br>
+                - Chipset: Snapdragon 6s 4G Gen1, tối đa 2.1GHz 
+            </div>
+            <button class="button">Mua ngay</button>
+        </div>
+
+        <div class="card">
+            <img src="./IMG/P4_C16(4).jpg" alt="OPPO Find X8 16GB 512GB">
+            <h3>OPPO Find X8 16GB 512GB</h3>
+            <div class="gia">21.990.000đ</div>
+            <div>
+                <strong>Mô tả:</strong><br>
+                - Kích thước màn hình: 6.59 inches <br>
+                - Camera sau: 50MP OIS (Chính) + 50MP (Chân dung Tele) + 50MP (Góc rộng) <br>
+                - Camera trước: 32MP, khẩu độ F/2. <br>
+                - Chipset: MediaTek Dimensity 9400 
+            </div>
+            <button class="button">Mua ngay</button>
+        </div>
+    </div>
+    <div class="footer">
+        <h2> Thông Tin Liên Hệ </h2>
+        <p><strong>Địa chỉ:</strong> 123, ABC, Thành phố Hồ Chí Minh</p>
+        <p><strong>Điện thoại:</strong> 0123-456-789</p>
+        <p><strong>Email:</strong> info@cuahangdienthoai.vn</p>
+        <p><em>Cảm ơn quý khách đã ghé thăm cửa hàng!</em></p>
+    </div>
+</body>
+</html>
