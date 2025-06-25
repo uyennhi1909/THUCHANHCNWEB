@@ -27,72 +27,104 @@
             text-align: left;
             border-bottom: 2px solid;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px;
-            background-color: white;
-            font-size: 18px;
+        .lich {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin: 20px;
         }
-        th {
+        .thu {
             background-color: hotpink;
             color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 20px;
-            border: 1px solid mediumvioletred;
-        }
-        td {
             padding: 10px;
-            border: 1px solid mediumvioletred;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 2px solid mediumvioletred;
+        }
+        .trống {
+            background-color: rgb(248, 248, 248);
+            border: 2px dashed lightgray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .card {
+            background-color: white;
+            border: 2px solid mediumvioletred;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 4px 4px pink;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .date {
+            font-size: 18px;
+            font-weight: bold;
+            color: mediumvioletred;
+            margin-bottom: 10px;
+            text-align: center;
+            border-bottom: 1px solid hotpink;
+            padding-bottom: 5px;
+        }
+        .time {
+            font-size: 14px;
+            color: rgb(250, 60, 91);
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .sukien {
+            font-size: 18px;
+            font-weight: bold;
+            color: mediumvioletred;
+            margin: 5px;
             text-align: center;
         }
-        tr:nth-child(2) { 
-            background-color: white;
-        }
-        
-        tr:nth-child(3) {
-            background-color: lavenderblush;
-        }
-        
-        tr:nth-child(4) { 
-            background-color: lavenderblush;
-        }
-        
-        tr:nth-child(5) { 
-            background-color: rgb(255, 213, 220);
-        }
-        
-        tr:nth-child(6) { 
-            background-color: pink;
-        }
-        
-        tr:nth-child(7) { 
-            background-color: rgb(253, 173, 186);
-        }
-        
-        tr:nth-child(8) { 
-            background-color: rgb(253, 147, 164);
-        }
-        
-        tr:nth-child(9) { 
-            background-color: rgb(255, 116, 139);
-        }
-        .sukien-ganhat {
-            background-color: rgb(255, 190, 231) !important;
-            border: 3px solid mediumvioletred;
-        }
-        .sukien-ganhat td {
-            color: rgb(250, 0, 159);
-        }
-        strong {
-            color: mediumvioletred;
-        }
-
-        small {
-            color: rgb(255, 66, 161);
+        .tacgia {
+            font-size: 11px;
+            color: rgb(243, 3, 123);
             font-style: italic;
-            text-shadow: 2px 0 2px lightgrey;
+            margin: 5px;
+            text-align: center;
+        }
+        .diadiem {
+            font-size: 12px;
+            color: hotpink;
+            margin: 10px;
+            text-align: center;
+            background-color: lavenderblush ;
+        }
+        .gia {
+            font-size: 14px;
+            font-weight: bold;
+            color: mediumvioletred;
+            border-radius: 50%;
+            padding: 5px;
+            text-align: center;
+            margin: 10px;
+            border: 2px solid hotpink;
+        }
+        .trangthaive {
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 100px;
+            margin: 10px 20px ;
+            text-align: center;
+            font-weight: bold;
+        }
+        .conve {
+            background-color: rgb(144, 238, 144);
+            color: green;
+        }
+        .hetve {
+            background-color: rgb(255, 182, 193);
+            color: red;
+        }
+        .free {
+            background-color: lavenderblush;
+            color: hotpink;
         }
     </style>
 </head>
@@ -102,79 +134,129 @@
         <p>Tháng 6/2025</p>
     </div>
     <h2>SỰ KIỆN SẮP DIỄN RA</h2>
-    <table>
-        <tr>
-            <th>Ngày</th>
-            <th>Thời Gian</th>
-            <th>Tên Sự Kiện</th>
-            <th>Địa Điểm</th>
-            <th>Giá Vé</th>
-            <th>Trạng Thái</th>
-        </tr>
-        <tr>
-            <td><strong>06/06/2025<br>Thứ 6</strong></td>
-            <td>19:00 - 21:00</td>
-            <td><strong>Đêm nhạc cổ điển<br>"Hương sắc tình yêu"</strong><br><small>Nghệ sĩ: Đỗ Hồng Quân</small></td>
-            <td>Hội trường lớn<br>Tầng 2</td>
-            <td>200.000đ</td>
-            <td>Còn vé</td>
-        </tr>
-        <tr>
-            <td><strong>08/06/2025<br>Chủ nhật</strong></td>
-            <td>15:00 - 17:00</td>
-            <td><strong>Triển lãm tranh<br>"Sài Gòn xưa và nay"</strong><br><small>Họa sĩ: Nguyễn Văn An</small></td>
-            <td>Phòng triển lãm<br>Tầng 1</td>
-            <td>Miễn phí</td>
-            <td>Mở cửa</td>
-        </tr>
-        <tr class="sukien-ganhat">
-            <td><strong>10/06/2025<br>Thứ 3</strong></td>
-            <td>20:00 - 22:00</td>
-            <td><strong>Kịch nói<br>"Người mẹ Việt Nam anh hùng"</strong><br><small>Đoàn kịch Thế hệ trẻ</small></td>
-            <td>Sân khấu chính<br>Tầng 1</td>
-            <td>150.000đ</td>
-            <td>Sắp hết vé</td>
-        </tr>
-        <tr>
-            <td><strong>12/06/2025<br>Thứ 5</strong></td>
-            <td>19:30 - 21:30</td>
-            <td><strong>Live concert<br>"Những bài hát hay nhất"</strong><br><small>Ca sĩ: Mỹ Tâm</small></td>
-            <td>Hội trường lớn<br>Tầng 2</td>
-            <td>500.000đ</td>
-            <td>Hết vé</td>
-        </tr>
-        <tr>
-            <td><strong>15/06/2025<br>Chủ nhật</strong></td>
-            <td>09:00 - 17:00</td>
-            <td><strong>Hội sách<br>"Ngày sách Việt Nam"</strong><br><small>Nhiều tác giả tham gia</small></td>
-            <td>Toàn bộ tầng 1</td>
-            <td>Miễn phí</td>
-            <td>Mở cửa</td>
-        </tr>
-        <tr>
-            <td><strong>18/06/2025<br>Thứ 4</strong></td>
-            <td>19:00 - 21:00</td>
-            <td><strong>Đêm văn nghệ<br>"Múa dân gian 3 miền"</strong><br><small>Đoàn múa Hồng Lĩnh</small></td>
-            <td>Sân khấu chính<br>Tầng 1</td>
-            <td>180.000đ</td>
-            <td>Còn vé</td>
-        </tr>
-        <tr>
-            <td><strong>20/06/2025<br>Thứ 6</strong></td>
-            <td>20:00 - 22:30</td>
-            <td><strong>Chiếu phim<br>"Cô ba Sài Gòn"</strong><br><small>Phim kinh điển Việt Nam</small></td>
-            <td>Phòng chiếu<br>Tầng 3</td>
-            <td>80.000đ</td>
-            <td>Còn vé</td>
-        </tr>
-        <tr>
-            <td><strong>22/06/2025<br>Chủ nhật</strong></td>
-            <td>16:00 - 18:00</td>
-            <td><strong>Xiếc<br>"Gánh xiếc nhí"</strong><br><small>Dành cho thiếu nhi</small></td>
-            <td>Sân ngoài trời</td>
-            <td>100.000đ</td>
-            <td>Còn vé</td>
-        </tr>
-    </table>
+    <div class="lich">
+        <!-- Header -->
+        <div class="thu">Thứ 2</div>
+        <div class="thu">Thứ 3</div>
+        <div class="thu">Thứ 4</div>
+        <div class="thu">Thứ 5</div>
+        <div class="thu">Thứ 6</div>
+        <div class="thu">Thứ 7</div>
+        <div class="thu">Chủ nhật</div>
+        <!-- Tuần 1 -->
+        <div class="trống">
+            <div class="date">02/06/2025<br>Thứ 2</div>
+        </div>
+        <div class="trống">
+            <div class="date">03/06/2025<br>Thứ 3</div>
+        </div> 
+        <div class="trống">
+            <div class="date">04/06/2025<br>Thứ 4</div>
+        </div> 
+        <div class="trống">
+            <div class="date">05/06/2025<br>Thứ 5</div>
+        </div> 
+        <div class="card"> 
+            <div class="date">06/06/2025<br>Thứ 6</div>
+            <div class="time">19:00 - 21:00</div>
+            <div class="sukien">Đêm nhạc cổ điển<br>"Hương sắc tình yêu"</div>
+            <div class="tacgia">Nghệ sĩ: Đỗ Hồng Quân</div>
+            <div class="diadiem">Hội trường lớn<br>Tầng 2</div>
+            <div class="gia">200.000đ</div>
+            <div class="trangthaive conve">Còn vé</div>
+        </div>
+        <div class="trống">
+            <div class="date">07/06/2025<br>Thứ 7</div>
+        </div> 
+        <div class="card"> 
+            <div class="date">08/06/2025<br>Chủ nhật</div>
+            <div class="time">15:00 - 17:00</div>
+            <div class="sukien">Triển lãm tranh<br>"Sài Gòn xưa và nay"</div>
+            <div class="tacgia">Họa sĩ: Nguyễn Văn An</div>
+            <div class="diadiem">Phòng triển lãm<br>Tầng 1</div>
+            <div class="gia">Miễn phí</div>
+            <div class="trangthaive free">Mở cửa</div>
+        </div>
+        <!-- Tuần 2 -->
+        <div class="trống">
+            <div class="date">09/06/2025<br>Thứ 2</div>
+        </div>
+        <div class="card">
+            <div class="date">10/06/2025<br>Thứ 3</div>
+            <div class="time">20:00 - 22:00</div>
+            <div class="sukien">Kịch nói<br>"Người mẹ Việt Nam anh hùng"</div>
+            <div class="tacgia">Đoàn kịch Thế hệ trẻ</div>
+            <div class="diadiem">Sân khấu chính<br>Tầng 1</div>
+            <div class="gia">150.000đ</div>
+            <div class="trangthaive hetve">Sắp hết vé</div>
+        </div>
+        <div class="trống">
+            <div class="date">11/06/2025<br>Thứ 4</div>
+        </div> 
+        <div class="card"> 
+            <div class="date">12/06/2025<br>Thứ 5</div>
+            <div class="time">19:30 - 21:30</div>
+            <div class="sukien">Live concert<br>"Những bài hát hay nhất"</div>
+            <div class="tacgia">Ca sĩ: Mỹ Tâm</div>
+            <div class="diadiem">Hội trường lớn<br>Tầng 2</div>
+            <div class="gia">500.000đ</div>
+            <div class="trangthaive hetve">Hết vé</div>
+        </div>
+        <div class="trống">
+            <div class="date">13/06/2025<br>Thứ 6</div>
+        </div> 
+        <div class="trống">
+            <div class="date">14/06/2025<br>Thứ 7</div>
+        </div> 
+        <div class="card">
+            <div class="date">15/06/2025<br>Chủ nhật</div>
+            <div class="time">09:00 - 17:00</div>
+            <div class="sukien">Hội sách<br>"Ngày sách Việt Nam"</div>
+            <div class="tacgia">Nhiều tác giả tham gia</div>
+            <div class="diadiem">Toàn bộ tầng 1</div>
+            <div class="gia">Miễn phí</div>
+            <div class="trangthaive free">Mở cửa</div>
+        </div>
+        <!-- Tuần 3 -->
+        <div class="trống">
+            <div class="date">16/06/2025<br>Thứ 2</div>
+        </div> 
+        <div class="trống">
+            <div class="date">17/06/2025<br>Thứ 3</div>
+        </div>
+        <div class="card">
+            <div class="date">18/06/2025<br>Thứ 4</div>
+            <div class="time">19:00 - 21:00</div>
+            <div class="sukien">Đêm văn nghệ<br>"Múa dân gian 3 miền"</div>
+            <div class="tacgia">Đoàn múa Hồng Lĩnh</div>
+            <div class="diadiem">Sân khấu chính<br>Tầng 1</div>
+            <div class="gia">180.000đ</div>
+            <div class="trangthaive conve">Còn vé</div>
+        </div>
+        <div class="trống">
+            <div class="date">19/06/2025<br>Thứ 5</div>
+        </div>
+        <div class="card">
+            <div class="date">20/06/2025<br>Thứ 6</div>
+            <div class="time">20:00 - 22:30</div>
+            <div class="sukien">Chiếu phim<br>"Cô ba Sài Gòn"</div>
+            <div class="tacgia">Phim kinh điển Việt Nam</div>
+            <div class="diadiem">Phòng chiếu<br>Tầng 3</div>
+            <div class="gia">80.000đ</div>
+            <div class="trangthaive conve">Còn vé</div>
+        </div>
+        <div class="trống">
+            <div class="date">21/06/2025<br>Thứ 7</div>
+        </div> 
+        <div class="card">
+            <div class="date">22/06/2025<br>Chủ nhật</div>
+            <div class="time">16:00 - 18:00</div>
+            <div class="sukien">Xiếc<br>"Gánh xiếc nhí"</div>
+            <div class="tacgia">Dành cho thiếu nhi</div>
+            <div class="diadiem">Sân ngoài trời</div>
+            <div class="gia">100.000đ</div>
+            <div class="trangthaive conve">Còn vé</div>
+        </div>
+    </div>
 </body>
 </html>
