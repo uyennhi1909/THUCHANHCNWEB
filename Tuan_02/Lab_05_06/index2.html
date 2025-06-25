@@ -16,19 +16,20 @@
         .P2_C7 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+            gap: 20px;
+            justify-self: center;
         }
         .P2_C7 img {
             width: 200px;
             height: 150px;
             border-radius: 10px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .P2_C7 {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             .P2_C7 {
                 grid-template-columns: 1fr;
             }
@@ -102,12 +103,12 @@
     </div>
     <h2> Thư viện ảnh </h2>
     <div class = "P2_C7">
-        <img src="./IMG/P2_C7(1).jpg" alt="Ảnh 1">
-        <img src="./IMG/P2_C7(2).jpg" alt="Ảnh 2">
-        <img src="./IMG/P2_C7(3).jpg" alt="Ảnh 3">
-        <img src="./IMG/P2_C7(4).jpg" alt="Ảnh 4">
-        <img src="./IMG/P2_C7(5).jpg" alt="Ảnh 5">
-        <img src="./IMG/P2_C7(6).jpg" alt="Ảnh 6">
+        <div class="anh1"><img src="./IMG/P2_C7(1).jpg" alt="Ảnh 1"></div>
+        <div class="anh2"><img src="./IMG/P2_C7(2).jpg" alt="Ảnh 2"></div>
+        <div class="anh3"><img src="./IMG/P2_C7(3).jpg" alt="Ảnh 3"></div>
+        <div class="anh4"><img src="./IMG/P2_C7(4).jpg" alt="Ảnh 4"></div>
+        <div class="anh5"><img src="./IMG/P2_C7(5).jpg" alt="Ảnh 5"></div>
+        <div class="anh6"><img src="./IMG/P2_C7(6).jpg" alt="Ảnh 6"></div>
     </div>
     <h2> Video Youtube </h2>
     <div class = "P2_C8">
