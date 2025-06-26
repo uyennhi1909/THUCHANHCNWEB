@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV cá nhân</title>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            background-color: lavenderblush;
+            width: 1000px;
+            margin: 10px;
+            color: mediumvioletred;
+        }
+        .left{
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h2{
+            text-align: left;
+            border-bottom: 2px solid;
+        }
+        ul{
+            list-style-type: circle;
+        }
+        .name{
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .hoatdong{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="left">
+            <div class="anh">
+                <img src="./Tuan_03/IMG/P1_C1.jpg" alt="ảnh CV cá nhân">
+            </div>
+            <div class="lienhe">
+                <h2>Liên Hệ</h2>
+                <strong>Emali:</strong> nuyen1909@gmali.com
+                <strong>Số điện thoại:</strong>035-XXX-6804
+                <strong>Địa chỉ:</strong>TP.Hồ Chí Minh
+            </div>
+            <div class="hocvan">
+                <h2>Học Vấn</h2>
+                <strong>2023-2027</strong><br>
+                Đại học Công nghiệp TP.HCM <br>
+                Ngành Thương mại điện tử <br>
+                GPA: 3.56/4.0
+            </div>
+            <div class="kynang">
+                <h2>Kỹ năng</h2>
+                <ul>
+                    <li>Kỹ năng 1</li>
+                    <li>Kỹ năng 2</li>
+                    <li>Kỹ năng 3</li>
+                    <li>Kỹ năng 4</li>
+                    <li>Kỹ năng 5</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name"> Ngô Uyên Nhi</div>
+            <div class="muctieu">
+                Sinh viên năm 3 ngành Thương mại điện tử trường Đại học Công nghiệp
+                thành phố Hồ Chí Minh với mong muốn ....
+            </div>
+            <div class="kinhnghiem">
+                <h2>Kinh Nghiệm</h2>
+                <ul>
+                    <li>
+                        <strong>
+                            2023 <br>
+                            Hoạt động 1: Tình nguyện viên chương trình ABC
+                        </strong>
+                        <ul class="hoatdong">
+                            <li>- Kinh nghiệm 1 đạt được từ hoạt động 1</li>
+                            <li>- Kinh nghiệm 2 đạt được từ hoạt động 1</li>
+                            <li>- Kinh nghiệm 3 đạt được từ hoạt động 1</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>
+                            2023 <br>
+                            Hoạt động 2: Tình nguyện viên chương trình ABC
+                        </strong>
+                        <ul class="hoatdong">
+                            <li>- Kinh nghiệm 1 đạt được từ hoạt động 2</li>
+                            <li>- Kinh nghiệm 2 đạt được từ hoạt động 2</li>
+                            <li>- Kinh nghiệm 3 đạt được từ hoạt động 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>
+                            2023 <br>
+                            Hoạt động 3: Tình nguyện viên chương trình ABC
+                        </strong>
+                        <ul class="hoatdong">
+                            <li>- Kinh nghiệm 1 đạt được từ hoạt động 3</li>
+                            <li>- Kinh nghiệm 2 đạt được từ hoạt động 3</li>
+                            <li>- Kinh nghiệm 3 đạt được từ hoạt động 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="chungchi">
+                <h2>Chứng Chỉ</h2>
+                <ul>
+                    <li>Chứng chỉ 1</li>
+                    <li>Chứng chỉ 2</li>
+                    <li>Chứng chỉ 3</li>
+                    <li>Chứng chỉ 4</li>
+                    <li>Chứng chỉ 5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
