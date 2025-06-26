@@ -17,17 +17,12 @@
       color: mediumvioletred;
     }
     .P1_C1 {
-      align-items: center;
-      justify-content: center;
-      background-color: lavenderblush;
-      padding: 20px;
-      text-align: left;
-    }
-    .intro-content {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 20px;
+      align-items: center;
+      text-align: left;
     }
     #avt {
       width: 150px;
@@ -36,7 +31,7 @@
       margin-bottom: 10px;
     }
     @media (max-width: 768px) {
-      .intro-content {
+      .P1_C1 {
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -137,8 +132,7 @@
 </head>
 <body>
   <div class="P1_C1">
-    <div class="intro-content">
-      <img src="./IMG/P1_C1.jpg" alt="Ảnh đại diện" id="avt">
+    <img src="./IMG/P1_C1.jpg" alt="Ảnh đại diện" id="avt">
       <div>
         <h1>Giới thiệu bản thân</h1>
         <p>Họ tên: <strong>Ngô Uyên Nhi</strong></p>

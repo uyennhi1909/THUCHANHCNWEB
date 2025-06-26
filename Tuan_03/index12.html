@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LỊCH SỰ KIỆN</title>
+    <style>
+        .lich{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 10px;
+            background-color: lavenderblush;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid mediumvioletred;
+            border-radius: 5px;
+        }
+        .thu{
+            color: white;
+            background-color: hotpink;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .trong{
+            background-color: white;
+            height: 200px;
+            border: 1px dashed lightgray;
+            border-radius: 10px;
+            box-shadow: 0 0 2px 2px pink;
+        }
+        .date{
+            text-align: center;
+            padding-top: 5px;
+            color: mediumvioletred;
+            font-weight: bold;
+            border-bottom: 1px solid mediumvioletred;
+        }
+        .card{
+            background-color: white;
+            box-shadow: 0 0 2px 2px hotpink;
+            border: 1px solid mediumvioletred;
+            border-radius: 10px;
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        .time{
+            font-size: 11px;
+            color: rgb(255, 81, 110);
+            text-align: center;
+            padding: 5px;
+        }
+        .sukien{
+            color: mediumvioletred;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+            padding: 0 2px;
+        }
+        .tacgia{
+            font-size: 10px;
+            text-align: center;
+            color: rgb(255, 112, 203);
+            padding: 1px 5px;
+        }
+        .diadiem{
+            background-color: pink;
+            color: rgb(255, 0, 149);
+            text-align: center;
+            padding: 2px;
+            margin: 5px;
+            font-size: 12px;
+        }
+        .giave{
+            font-size: 14px;
+            color: mediumvioletred;
+            border: 2px solid;
+            border-radius: 50%;
+            text-align: center;
+            padding: 3px;
+            margin: 2px;
+            font-weight: bold;
+        }
+        .trangthaive{
+            text-align: center;
+            border-radius: 20px;
+            background-color: pink ;
+            margin: 2px 10px;
+            padding: 2px;
+            font-size: 10px;
+        }
+        .trangthaive:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .conve{
+            background-color: rgb(191, 255, 191);
+            color: rgb(3, 85, 3);
+            border: 1px solid;
+        }
+        .hetve{
+            background-color: rgb(255, 160, 154);
+            color: rgb(150, 4, 4);
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="lich">
+        <div class="thu">Thứ 2</div>
+        <div class="thu">Thứ 3</div>
+        <div class="thu">Thứ 4</div>
+        <div class="thu">Thứ 5</div>
+        <div class="thu">Thứ 6</div>
+        <div class="thu">Thứ 7</div>
+        <div class="thu">Chủ nhật</div>
+        <div class="trong">
+            <div class ="date"> 02/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 03/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 04/06 </div>    
+        </div>
+        <div class="card">
+            <div class ="date"> 05/06 </div>
+            <div class="time">20:00 - 21:00</div>
+            <div class="sukien">Đêm nhạc cổ điển</div>
+            <div class="tacgia">Trình diễn: Ban nhạc ABC</div>
+            <div class="diadiem">Sảnh tầng trệt nhà H</div>
+            <div class="giave">200.000đ</div>
+            <div class="trangthaive conve">Còn vé</div>
+        </div>
+        <div class="trong">
+            <div class ="date"> 06/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 07/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 08/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 09/06 </div>    
+        </div>
+        <div class="card">
+            <div class ="date"> 10/06 </div>
+            <div class="time"> 7:00 - 20:00</div>
+            <div class="sukien">Ngày sách Việt Nam</div>
+            <div class="tacgia">Đơn vị: Nhà sách ABC</div>
+            <div class="diadiem">Sảnh chính tòa trung tâm</div>
+            <div class="giave">Miễn phí</div>
+            <div class="trangthaive conve">Mở cửa</div>
+        </div>
+        <div class="trong">
+            <div class ="date"> 11/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 12/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 13/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 14/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 15/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 16/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 17/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 18/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 19/06 </div>    
+        </div>
+        <div class="card">
+            <div class ="date"> 20/06 </div>
+            <div class="time">18:00 - 22:00</div>
+            <div class="sukien">Live Concert</div>
+            <div class="tacgia">Trình diễn: ABC, DEF</div>
+            <div class="diadiem">Sảnh chính tòa trung tâm</div>
+            <div class="giave">400.000đ</div>
+            <div class="trangthaive hetve">Hết vé</div>
+        </div>
+        <div class="trong">
+            <div class ="date"> 21/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 22/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 23/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 24/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 25/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 26/06 </div>    
+        </div>
+        <div class="trong">
+            <div class ="date"> 27/06 </div>    
+        </div>
+        <div class="card">
+            <div class ="date"> 28/06 </div>
+            <div class="time">18:00 - 20:00</div>
+            <div class="sukien">Xiếc cá heo, xiếc khỉ</div>
+            <div class="tacgia">Trình diễn: Gánh xiếc ABC</div>
+            <div class="diadiem">Tầng hầm Tòa trung tâm</div>
+            <div class="giave">100.000đ</div>
+            <div class="trangthaive hetve">Hết vé</div>
+        </div>
+        <div class="trong">
+            <div class ="date"> 29/06 </div>    
+        </div>
+    </div>
+</body>
+</html>
