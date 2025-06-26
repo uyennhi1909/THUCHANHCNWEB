@@ -3,14 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trang chủ</title>
+    <title>TRANG TIN TỨC 24H</title>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            background: lavenderblush;
+            margin: 20px;
+        }
+        .header{
+            grid-column: 1/4;
+            text-align: center;
+        }
+        #tentrang{
+            color: mediumvioletred;
+            font-weight: bold;
+            font-size: 40px;
+            text-shadow: 4px 4px pink;
+        }
+        .menu{
+            grid-column: 1/4;
+            background-color: hotpink;
+            display: grid;
+            grid-template-columns: repeat(8,auto);
+            color: white;
+        }
+        .phanloai{
+            display: flex;
+            align-items:center ;
+            text-wrap: nowrap;
+            justify-content: center;
+            font-size: 12px;
+            padding: 10px;
+        }
+        .phanloai:hover{
+            background-color: pink;
+            color: mediumvioletred;
+            cursor: pointer;
+        }
+        .left, .center, .right{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px;
+        }
+        .card{
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card:hover{
+            transform: scale(1.02);
+            background-color: pink;
+            box-shadow: 2px 2px hotpink;
+            cursor: pointer;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .tieude{
+            text-align: center;
+            padding: 5px;
+            color: mediumvioletred;
+            font-weight: bold;
+        }
+        .tieude:hover{
+            text-decoration: underline;
+            color: hotpink;
+        }
+        .mota{
+            color: rgb(151, 64, 107);
+        }
+        .time{
+            color: rgb(168, 84, 97);
+            text-align: right;
+            font-size: 12px;
+        }
+        .footer{
+            grid-column: 1/4;
+            color: lavenderblush;
+            background-color: hotpink;
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .left .card, .center .card, .right .card{
+            width: auto;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="layout">
-        <div class="header"></div>
-        <div class="menu"></div>
-        <div class="content"></div>
-        <div class="footer"></div>
+        <div class="header">
+            <div id="tentrang"> TRANG TIN TỨC 24H </div>
+            <em>Cập nhật tin tức mới và nhanh nhất</em>
+        </div>
+        <div class="menu">
+            <div class="phanloai">TIN TỨC</div>
+            <div class="phanloai">BÓNG ĐÁ</div>
+            <div class="phanloai">KINH DOANH</div>
+            <div class="phanloai">GIẢI TRÍ</div>
+            <div class="phanloai">SỨC KHỎE</div>
+            <div class="phanloai">THẾ GIỚI</div>
+            <div class="phanloai">THỂ THAO</div>
+            <div class="phanloai">LÀM ĐẸP</div>
+        </div>
+        <div class="left">
+            <div class="card">
+                <div class="anh">
+                    <img src="./IMG/P2_C7(1).jpg" alt="ảnh tin tức 1">
+                </div>
+                <div class="tieude">TIN TỨC 1</div>
+                <div class="mota">
+                    Đây là đoạn mô tả tin tức 1
+                </div>
+                <div class="time">
+                    26/06/2025 - ABC
+                </div>
+            </div>
+            <div class="card">
+                <div class="anh">
+                    <img src="./IMG/P2_C7(2).jpg" alt="ảnh tin tức 2">
+                </div>
+                <div class="tieude">TIN TỨC 2</div>
+                <div class="mota">
+                    Đây là đoạn mô tả tin tức 2
+                </div>
+                <div class="time">
+                    26/06/2025 - ABC
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="card">
+                <div class="anh">
+                    <img src="./IMG/P2_C7(3).jpg" alt="ảnh tin tức 3">
+                </div>
+                <div class="tieude">TIN TỨC 3</div>
+                <div class="mota">
+                    Đây là đoạn mô tả tin tức 3
+                </div>
+                <div class="time">
+                    26/06/2025 - ABC
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="card">
+                <div class="anh">
+                    <img src="./IMG/P2_C7(4).jpg" alt="ảnh tin tức 4">
+                </div>
+                <div class="tieude">TIN TỨC 4</div>
+                <div class="mota">
+                    Đây là đoạn mô tả tin tức 4
+                </div>
+                <div class="time">
+                    26/06/2025 - ABC
+                </div>
+            </div>
+            <div class="card">
+                <div class="anh">
+                    <img src="./IMG/P2_C7(5).jpg" alt="ảnh tin tức 5">
+                </div>
+                <div class="tieude">TIN TỨC 5</div>
+                <div class="mota">
+                    Đây là đoạn mô tả tin tức 5
+                </div>
+                <div class="time">
+                    26/06/2025 - ABC
+                </div>
+            </div>
+            <div class="card">
+                <div class="anh">
+                    <img src="./IMG/P2_C7(6).jpg" alt="ảnh tin tức 6">
+                </div>
+                <div class="tieude">TIN TỨC 6</div>
+                <div class="mota">
+                    Đây là đoạn mô tả tin tức 6
+                </div>
+                <div class="time">
+                    26/06/2025 - ABC
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Liên hệ: 0123-456-789 <br>
+            Email: Trangtintuc24@gmail.com
+        </div>
     </div>
 </body>
 </html>
