@@ -11,6 +11,10 @@
             border-radius: 5px;
             text-align: left;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
         h1,h2{
             margin-bottom: 10px; 
@@ -41,12 +45,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: 2px solid;
+            padding: 10px 100px;
+            border-radius: 10px;
         }
         input[type="submit"]{
             display: block;
             border: 3px solid mediumvioletred;
             padding: 3px ;
-            margin: 10px auto;
+            margin-top: 10px;
         }
         .P3_C11 input:focus{
             background-color: lightpink;
@@ -65,6 +72,16 @@
             border-radius: 5px;
             border: 2px solid mediumvioletred;
         }
+        .P3_C12{
+            border: 5px double;
+            padding: 40px;
+            border-radius: 20px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -75,7 +92,9 @@
         <br>
         Password: <input type = "password" name = "password"/>
         <br>
-        <input type = "submit" value = "Đăng nhập"/> 
+        <div class="button">
+            <input type = "submit" value = "Đăng nhập"/> 
+        </div>
     </form>
     </div>
     <div class = "P3_C12">
@@ -109,7 +128,9 @@
         <h2> Góp ý </h2>
         <textarea name="opinion" id="op1" cols="50" rows="5"></textarea>
         <br>
-        <input type = "submit" value = "Xác nhận gửi"/> 
+        <div class="button">
+            <input type = "submit" value = "Xác nhận gửi"/> 
+        </div>
     </form>
     </div>
 </body>

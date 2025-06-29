@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biểu mẫu phần 3 câu 14</title>
     <style>
-        *{ 
-            color: mediumvioletred;}
+        body{ 
+            color: mediumvioletred;
+            display: flex;
+            justify-content: center;
+        }
         h1{ text-align: center;}
         .P3_C14 {
             background-color: lavenderblush;
@@ -33,6 +36,10 @@
         }
         button{
             border-radius: 5px;
+            background-color: white;
+            color: mediumvioletred;
+            border: 2px solid mediumvioletred;
+            padding: 5px;
         }
         .button{
             display: flex;
@@ -63,35 +70,37 @@
     </style>
 </head>
 <body>
-    <h1> Form phản hồi khách hàng </h1>
-    <div class =  "P3_C14">
-        <form>
-            <h2> Đánh giá của khách hàng </h2>
-            <div class="star">
-                <input type="radio" id="1sao" name="rate" value="1">
-                <label for="1sao">★</label>
-                <input type="radio" id="2sao" name="rate" value="2">
-                <label for="2sao">★</label>
-                <input type="radio" id="3sao" name="rate" value="3">
-                <label for="3sao">★</label>
-                <input type="radio" id="4sao" name="rate" value="4">
-                <label for="4sao">★</label>
-                <input type="radio" id="5sao" name="rate" value="5">
-                <label for="5sao">★</label>
-            </div>
-            <div class="email">
-                <h2> Email của khách hàng </h2> 
-                <input type = "email"/>
-            </div>
-            <div class="opinion">
-                <h2> Ý kiến của khách hàng </h2>
-                <textarea name="opinion" id="op1" cols="50" rows="10"></textarea>
-            </div>
-            <div class="button">
-                <button type="submit"> Xác nhận gửi phản hồi </button> 
-                <button type="reset"> Xoá phản hồi </button> 
-            </div>
-        </form>
+    <div class="form">
+        <h1> Form phản hồi khách hàng </h1>
+        <div class =  "P3_C14">
+            <form>
+                <h2> Đánh giá của khách hàng </h2>
+                <div class="star">
+                    <input type="radio" id="1sao" name="rate" value="1">
+                    <label for="1sao">★</label>
+                    <input type="radio" id="2sao" name="rate" value="2">
+                    <label for="2sao">★</label>
+                    <input type="radio" id="3sao" name="rate" value="3">
+                    <label for="3sao">★</label>
+                    <input type="radio" id="4sao" name="rate" value="4">
+                    <label for="4sao">★</label>
+                    <input type="radio" id="5sao" name="rate" value="5">
+                    <label for="5sao">★</label>
+                </div>
+                <div class="email">
+                    <h2> Email của khách hàng </h2> 
+                    <input type = "email"/>
+                </div>
+                <div class="opinion">
+                    <h2> Ý kiến của khách hàng </h2>
+                    <textarea name="opinion" id="op1" cols="50" rows="10"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit"> Xác nhận gửi phản hồi </button> 
+                    <button type="reset"> Xoá phản hồi </button> 
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

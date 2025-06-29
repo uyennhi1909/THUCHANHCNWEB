@@ -8,6 +8,8 @@
         body{
             color: mediumvioletred;
             background-color: lavenderblush;
+            display: flex;
+            justify-content: center;
         }
         h1{
             text-align: center;
@@ -84,55 +86,57 @@
     </style>
 </head>
 <body>
-    <h1> Form thanh toán đơn hàng </h1>
-    <form>
-        <div class="info">
-            <div class="name">
-                <h2> Thông tin cá nhân </h2>
-                <label for="name">Họ và tên:</label> 
-                <input type="text" placeholder="Điền họ và tên" required>
-            </div>
-            <div class="phone">
-                <label for="tel">Số điện thoại: </label> 
-                <input type="tel" placeholder="Số điện thoại của bạn" required>
-            </div>
-            <div class="email">
-                <label for="email"> Email: </label> 
-                <input type="email" placeholder="Vui lòng điền địa chỉ email">
-            </div>
-        </div>
-        <div class="diachi">
-            <h2> Địa chỉ giao hàng </h2>
-            <input type="text" placeholder="Địa chỉ bạn muốn nhận hàng" required>
-        </div>
-        <div class="thanhtoan">
-            <h2> Hình thức thanh toán </h2>
-            <div class="payment">
-                <div class="momo">
-                    <input type="radio" name="Payment" id="Momo"> Momo <br>
+    <div class="form">
+        <h1> Form thanh toán đơn hàng </h1>
+        <form>
+            <div class="info">
+                <div class="name">
+                    <h2> Thông tin cá nhân </h2>
+                    <label for="name">Họ và tên:</label> 
+                    <input type="text" placeholder="Điền họ và tên" required>
                 </div>
-                <div class="cod">
-                    <input type="radio" name="Payment" id="COD"> Thanh toán khi nhận hàng 
+                <div class="phone">
+                    <label for="tel">Số điện thoại: </label> 
+                    <input type="tel" placeholder="Số điện thoại của bạn" required>
                 </div>
-                <div class="vietqr">
-                    <input type="radio" name="Payment" id="VietQR"> VietQR 
-                </div>
-                <div class="bank">
-                    <input type="radio" name="Payment" id="Ngân hàng"> Chuyển khoản ngân hàng
-                    <select name="Bank">
-                        <option value=""> Chọn ngân hàng </option>
-                        <option value="MB Bank"> MB Bank </option>
-                        <option value="VCB Bank"> VCB Bank </option>
-                        <option value="BIDV Bank"> BIDV Bank </option>
-                        <option value="Viettin Bank"> Viettin Bank </option>
-                    </select>
+                <div class="email">
+                    <label for="email"> Email: </label> 
+                    <input type="email" placeholder="Vui lòng điền địa chỉ email">
                 </div>
             </div>
-        </div>
-        <div class="button">
-            <button> Xác nhận thanh toán </button>
-            <button type ="reset"> Xoá </button>
-        </div>
-    </form>
+            <div class="diachi">
+                <h2> Địa chỉ giao hàng </h2>
+                <input type="text" placeholder="Địa chỉ bạn muốn nhận hàng" required>
+            </div>
+            <div class="thanhtoan">
+                <h2> Hình thức thanh toán </h2>
+                <div class="payment">
+                    <div class="momo">
+                        <input type="radio" name="Payment" id="Momo"> Momo <br>
+                    </div>
+                    <div class="cod">
+                        <input type="radio" name="Payment" id="COD"> Thanh toán khi nhận hàng 
+                    </div>
+                    <div class="vietqr">
+                        <input type="radio" name="Payment" id="VietQR"> VietQR 
+                    </div>
+                    <div class="bank">
+                        <input type="radio" name="Payment" id="Ngân hàng"> Chuyển khoản ngân hàng
+                        <select name="Bank">
+                            <option value=""> Chọn ngân hàng </option>
+                            <option value="MB Bank"> MB Bank </option>
+                            <option value="VCB Bank"> VCB Bank </option>
+                            <option value="BIDV Bank"> BIDV Bank </option>
+                            <option value="Viettin Bank"> Viettin Bank </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button> Xác nhận thanh toán </button>
+                <button type ="reset"> Xoá </button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
