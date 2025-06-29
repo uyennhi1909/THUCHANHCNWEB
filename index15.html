@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form phản hồi khách hàng</title>
+    <style>
+        .P3_C14{
+            background-color: lavenderblush;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        h1{
+            color: mediumvioletred;
+            border-bottom: 3px solid;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            border: 5px double hotpink;
+            padding: 20px 50px;
+            border-radius: 20px;
+        }
+        h2{
+            color: rgb(254, 41, 148);
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        button{
+            background-color: white;
+            color: hotpink;
+            border: 1px solid lightpink;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: rgb(254, 41, 148);
+            color: white;
+        }
+        input,textarea{
+            border: 1px solid rgb(254, 41, 148);
+            border-radius: 5px;
+        }
+        textarea, input[type="email"]{
+            width: 100%;
+        }
+        textarea{
+            height: 20vh;
+        }
+        input:focus, textarea:focus{
+            background-color: lightpink;
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        .rate{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+        label{
+            color: lightgray;
+        }
+        label:hover{
+            color: gold;
+        }
+        label:hover~label{
+            color: gold;
+        }
+        input[type="radio"]:checked~label{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="P3_C14">
+        <h1>Form phản hồi khách hàng</h1>
+        <div class="form">
+            <form>
+                <h2>Đánh giá khách hàng</h2>
+                <div class="rate">
+                    <input type="radio" name="rate" id="1sao"> 
+                    <label for="1sao">&#9733</label>
+                    <input type="radio" name="rate" id="2sao"> 
+                    <label for="2sao">&#9733</label>
+                    <input type="radio" name="rate" id="3sao"> 
+                    <label for="3sao">&#9733</label>
+                    <input type="radio" name="rate" id="4sao"> 
+                    <label for="4sao">&#9733</label>
+                    <input type="radio" name="rate" id="5sao"> 
+                    <label for="5sao">&#9733</label>
+                </div>
+                <div class="email">
+                    <h2>Email khách hàng</h2>
+                    <input type="email">
+                </div>
+                <div class="opinion">
+                    <h2>Ý kiến khách hàng</h2>
+                    <textarea name="opinion" id="opinion"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Xác nhận gửi</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
