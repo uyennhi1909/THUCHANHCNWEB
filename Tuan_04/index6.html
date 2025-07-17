@@ -6,10 +6,10 @@
     <title>BaiTap1_NangCao</title>
     <style>
         .error{
-            background-color: red;
+            color: red;
         }
         .success{
-            background-color: blue;
+            color: blue;
         }
     </style>
 </head>
@@ -22,20 +22,18 @@
     </div>
     <script>
         function Bai1_NC(){
-            var input = document.getElementById("input");
-            if (input.value == ""){
+            var input = document.getElementById("input").value;
+            if (input == ""){
                 document.getElementById("output").innerText = "Please input";
-                input.className = "error";
-                return;
+                output.className = "error";
             }
-            else if (isNaN(input.value)){
+            else if (isNaN(input)){
                 document.getElementById("output").innerText = "Không phải số";
-                input.className = "error";
-                return;
+                output.className = "error";
             }
             else{
                 document.getElementById("output").innerText = "Đây là số hợp lệ";
-                input.className = "success";
+                output.className = "success";
             }
         }
     </script>

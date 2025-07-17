@@ -6,10 +6,10 @@
     <title>BaiTap2_NangCao</title>
     <style>
         .error{
-            background-color: red;
+            color: red;
         }
         .success{
-            background-color: blue;
+            color: blue;
         }
     </style>
 </head>
@@ -22,21 +22,18 @@
     </div>
     <script>
         function Bai2_NC(){
-            var input = document.getElementById("input");
-            var phone = input.value.trim();
-            if (phone == ""){
+            var input = document.getElementById("input").value;
+            if (input == ""){
                 document.getElementById("output").innerText = "Please input";
-                input.className = "error";
-                return;
+                output.className = "error";
             }
-            else if (isNaN(phone) || phone.length != 11){
+            else if (isNaN(input) || input.length != 11){
                 document.getElementById("output").innerText = "Số điện thoại không hợp lệ";
-                input.className = "error";
-                return;
+                output.className = "error";
             }
             else{
                 document.getElementById("output").innerText = "Đây là số điện thoại hợp lệ";
-                input.className = "success";
+                output.className = "success";
             }
         }
     </script>

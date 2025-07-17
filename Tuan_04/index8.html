@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap3_NangCao</title>
+    <style>
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Bai3_NC">
+        <h3>Bài tập 3 nâng cao: Kết hợp check số và check số điện thoại</h3>
+        <input type="text" id="input1" placeholder="Nhập số">
+        <input type="tel" id="input2" placeholder="Nhập số điện thoại">
+        <button onclick="Bai3_NC()">Kiểm tra</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function Bai1_NC() {
+            var input = document.getElementById("input1").value;
+            if (input == "") {
+                return false;
+            }
+            else if (isNaN(input)) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function Bai2_NC() {
+            var input = document.getElementById("input2").value;
+            if (input == "") {
+                return false;
+            }
+            else if (isNaN(input) || input.length != 11) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function Bai3_NC(){
+            Bai1_NC();
+            Bai2_NC();
+
+            console.log("Check số: ", Bai1_NC());
+            console.log("Check phone: ", Bai2_NC());
+
+            if (Bai1_NC() && Bai2_NC()){
+                document.getElementById("output").innerText = "Tất cả đều hợp lệ";
+                output.className = "success"
+            }
+            else{
+                document.getElementById("output").innerText = "Error";
+                output.className = "error"
+            }
+        }
+    </script>
+</body>
+
+</html>
