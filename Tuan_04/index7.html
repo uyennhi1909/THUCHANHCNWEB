@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap2_NangCao</title>
+    <style>
+        .error{
+            background-color: red;
+        }
+        .success{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="Bai2_NC">
+        <h3>Bài tập 2 nâng cao: Check phone</h3>
+        <input type="tel" id="input" placeholder="Nhập số điện thoại">
+        <button onclick="Bai2_NC()">Kiểm tra</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function Bai2_NC(){
+            var input = document.getElementById("input");
+            var phone = input.value.trim();
+            if (phone == ""){
+                document.getElementById("output").innerText = "Please input";
+                input.className = "error";
+                return;
+            }
+            else if (isNaN(phone) || phone.length != 11){
+                document.getElementById("output").innerText = "Số điện thoại không hợp lệ";
+                input.className = "error";
+                return;
+            }
+            else{
+                document.getElementById("output").innerText = "Đây là số điện thoại hợp lệ";
+                input.className = "success";
+            }
+        }
+    </script>
+</body>
+</html>
