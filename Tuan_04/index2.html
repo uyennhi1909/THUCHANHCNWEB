@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BaiTap2</title>
 </head>
+
 <body>
-    
+    <div class="Bai2">
+        <h3> Bài 2: Nhập tên và hiển thị trên web </h3>
+        <input type="text" id="name" placeholder="Nhập tên của bạn">
+        <button onclick="Bai2()">Click</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function Bai2() {
+            var name = document.getElementById("name").value;
+            document.getElementById("output").innerText = "Hello "+ name 
+        }
+    </script>
 </body>
+
 </html>

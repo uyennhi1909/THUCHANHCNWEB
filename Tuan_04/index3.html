@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap3</title>
+</head>
+<body>
+    <div class="Bai3">
+        <h3>Bài 3: Kiểm tra loại input</h3>
+        <input id="input"  placeholder="Hãy nhập gì đó">
+        <button onclick="Bai3()">Kiểm tra</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function Bai3(){
+            var input = document.getElementById("input").value;
+            if (input == ""){
+                document.getElementById("output").innerText = "Bạn chưa nhập gì";
+            }
+            else if (!isNaN(input) && input != ""){
+                document.getElementById("output").innerText = "Bạn vừa nhập số";
+            }
+            else{
+                document.getElementById("output").innerText = "Bạn vừa nhập text";                
+            }
+        }
+    </script>
+</body>
+</html>
