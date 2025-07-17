@@ -58,11 +58,15 @@
 
             if (Bai1_NC() && Bai2_NC()){
                 document.getElementById("output").innerText = "Tất cả đều hợp lệ";
-                output.className = "success"
+                output.className = "success";
+            }
+            else if (Bai1_NC() && Bai2_NC()==false){
+                document.getElementById("output").innerText = "Vui lòng sửa lại số điện thoại";
+                output.className = "error";
             }
             else{
                 document.getElementById("output").innerText = "Error";
-                output.className = "error"
+                output.className = "error";
             }
         }
     </script>
