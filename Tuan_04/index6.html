@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap1_NangCao</title>
+    <style>
+        .error{
+            background-color: red;
+        }
+        .success{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="Bai1_NC">
+        <h3>Bài tập 1 nâng cao: Check số</h3>
+        <input type="text" id="input" placeholder="Nhập số">
+        <button onclick="Bai1_NC()">Kiểm tra</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function Bai1_NC(){
+            var input = document.getElementById("input");
+            if (input.value == ""){
+                document.getElementById("output").innerText = "Please input";
+                input.className = "error";
+                return;
+            }
+            else if (isNaN(input.value)){
+                document.getElementById("output").innerText = "Không phải số";
+                input.className = "error";
+                return;
+            }
+            else{
+                document.getElementById("output").innerText = "Đây là số hợp lệ";
+                input.className = "success";
+            }
+        }
+    </script>
+</body>
+</html>
