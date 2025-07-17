@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap5_NangCao</title>
+</head>
+
+<body>
+    <div class="Bai5_NC">
+        <h3>Bài tập 5 nâng cao: Check ngày so với hiện tại</h3>
+        <input type="text" id="input" placeholder="DD-MM-YYYY">
+        <button onclick="Bai5_NC()">Kiểm tra</button>
+        <p id="output"></p>
+    </div>
+    <script>
+        function Bai5_NC() {
+            var input = document.getElementById("input").value;
+            var kiemtra = /^\d{2}-\d{2}-\d{4}$/;
+            if (!kiemtra.test(input)) {
+                document.getElementById("output").innerText = "Định dạng ngày tháng không hợp lệ";
+            }
+            var phan = input.split("-");
+            var ngay = Number(phan[0]);
+            var thang = Number(phan[1]);
+            var nam = Number(phan[2]);
+            var date = new Date(nam, thang - 1, ngay);
+            console.log("Ngày tháng năm nhập: " + date);
+            var today = new Date();
+            today.setHours(0, 0, 0, 0);
+            console.log("Ngày tháng năm hiện tại: " + today);
+            if (date.getDate() == ngay && date.getMonth() == thang - 1 && date.getFullYear() == nam) {
+                if (date < today) {
+                    document.getElementById("output").innerText = "Ngày tháng này trước ngày hiện tại";
+                }
+                else if (date > today) {
+                    document.getElementById("output").innerText = "Ngày tháng này sau ngày hiện tại";
+                }
+                else {
+                    document.getElementById("output").innerText = "Ngày tháng này là ngày hiện tại";
+                }
+            }
+            else {
+                document.getElementById("output").innerText = "Ngày tháng năm không hợp lệ";
+            }
+        }    
+    </script>
+</body>
+
+
+</html>
