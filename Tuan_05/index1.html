@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGÀY THÁNG NĂM</title>
+</head>
+
+<body>
+    <input type="date" id="input">
+    <button onclick="check()">Kiểm tra</button>
+    <p id="output"></p>
+
+    <script>
+        function check() {
+            var input = document.getElementById("input").value;
+            console.log(input);
+
+            var inputdate = new Date(input);
+            inputdate.setHours(0, 0, 0, 0);
+            console.log(inputdate);
+
+            var today = new Date();
+            today.setHours(0, 0, 0, 0);
+            console.log(today);
+
+            if (inputdate > today) {
+                console.log("future");
+                document.getElementById("output").innerText = 'Ngày nhập là ngày ở tương lai';
+            } else if (inputdate < today) {
+                console.log("past");
+                document.getElementById("output").innerText = 'Ngày nhập là ngày ở quá khứ';
+            } else {
+                console.log("present");
+                document.getElementById("output").innerText = 'Ngày nhập là ngày ở hiện tại';
+            }
+        }
+    </script>
+</body>
+
+</html>
