@@ -9,7 +9,7 @@
         .red {
             color: red;
         }
-        
+
         .blue {
             color: blue;
         }
@@ -88,8 +88,8 @@
     <script>
         // 1. Tạo một form yêu cầu người dùng nhập địa chỉ email. Kiểm tra định dạng phải hợp lệ (VD: example@domain.com).
         function Cau1() {
-            pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
-            input = document.getElementById("input1").value;
+           var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+           var input = document.getElementById("input1").value;
             if (!pattern.test(input)) {
                 document.getElementById("output1").innerText = "Định dạng không hợp lệ";
                 output1.className = "red";
@@ -103,8 +103,8 @@
 
         // 2. Tạo một input để kiểm tra số điện thoại Việt Nam hợp lệ, bắt đầu bằng 0 và có 10 chữ số.
         function Cau2() {
-            pattern = /^0\d{9}$/;
-            input = document.getElementById("input2").value;
+           var pattern = /^0\d{9}$/;
+           var input = document.getElementById("input2").value;
             if (!pattern.test(input)) {
                 document.getElementById("output2").innerText = "Định dạng không hợp lệ";
                 output2.className = "red";
@@ -118,8 +118,8 @@
 
         // 3. Mật khẩu an toàn
         function Cau3() {
-            pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
-            input = document.getElementById("input3").value;
+           var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+           var input = document.getElementById("input3").value;
             if (!pattern.test(input)) {
                 document.getElementById("output3").innerText = "Mật khẩu không an toàn";
                 output3.className = "red";
@@ -133,8 +133,8 @@
 
         // 4. Yêu cầu người dùng nhập họ tên không chứa số và ký tự đặc biệt. Không được để trống.
         function Cau4() {
-            pattern = /^[A-Za-z\s]+$/;
-            input = document.getElementById("input4").value;
+           var pattern = /^[A-Za-z\s]+$/;
+           var input = document.getElementById("input4").value;
             if (!pattern.test(input)) {
                 document.getElementById("output4").innerText = "Định dạng không hợp lệ";
                 output4.className = "red";
@@ -148,8 +148,8 @@
 
         // 5. Input ngày sinh theo định dạng dd/mm/yyyy. Kiểm tra ngày phải đúng định dạng và hợp lệ (ví dụ: không có 31/02/2023).
         function Cau5() {
-            pattern = /^\d{2}\/\d{2}\/\d{4}$/;
-            input = document.getElementById("input5").value;
+           var pattern = /^\d{2}\/\d{2}\/\d{4}$/;
+           var input = document.getElementById("input5").value;
             if (!pattern.test(input)) {
                 document.getElementById("output5").innerText = "Định dạng không hợp lệ";
                 output5.className = "red";
@@ -176,8 +176,8 @@
 
         // Tạo form nhập username, phải từ 5–15 ký tự, chỉ được dùng chữ cái, số và dấu gạch dưới _.
         function Cau6() {
-            pattern = /^[a-zA-Z0-9_]{5,15}$/;
-            input = document.getElementById("input6").value;
+           var pattern = /^[a-zA-Z0-9_]{5,15}$/;
+           var input = document.getElementById("input6").value;
             if (!pattern.test(input)) {
                 document.getElementById("output6").innerText = "Username không hợp lệ";
                 output6.className = "red";
@@ -191,8 +191,8 @@
 
         // Input kiểm tra địa chỉ IP hợp lệ theo IPv4 (VD: 192.168.1.1).
         function Cau7() {
-            pattern = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/;
-            input = document.getElementById("input7").value;
+           var pattern = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/;
+           var input = document.getElementById("input7").value;
             if (!pattern.test(input)) {
                 document.getElementById("output7").innerText = "Định dạng không hợp lệ";
                 output7.className = "red";
@@ -206,8 +206,8 @@
 
         // Yêu cầu nhập mã bưu điện Việt Nam (5 chữ số). Không chấp nhận chữ cái.
         function Cau8() {
-            pattern = /^\d{5}$/;
-            input = document.getElementById("input8").value;
+           var pattern = /^\d{5}$/;
+           var input = document.getElementById("input8").value;
             if (!pattern.test(input)) {
                 document.getElementById("output8").innerText = "Định dạng không hợp lệ";
                 output8.className = "red";
@@ -221,8 +221,8 @@
 
         // Kiểm tra số thẻ tín dụng với Regex (giả lập), 16 chữ số, có thể chia thành 4 nhóm 4 số cách nhau bằng dấu cách hoặc không có khoảng trắng.
         function Cau9() {
-            pattern = /^(\d{4} \d{4} \d{4} \d{4}|\d{16})$/;
-            input = document.getElementById("input9").value;
+           var pattern = /^(\d{4}\s?){4}$|^\d{16}$/;
+           var input = document.getElementById("input9").value;
             if (!pattern.test(input)) {
                 document.getElementById("output9").innerText = "Định dạng không hợp lệ";
                 output9.className = "red";
@@ -236,8 +236,8 @@
 
         // 10. URL hợp lệ Input kiểm tra URL hợp lệ.
         function Cau10() {
-            pattern = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/;
-            input = document.getElementById("input10").value;
+           var pattern = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/;
+           var input = document.getElementById("input10").value;
             if (!pattern.test(input)) {
                 document.getElementById("output10").innerText = "Định dạng không hợp lệ";
                 output10.className = "red";
